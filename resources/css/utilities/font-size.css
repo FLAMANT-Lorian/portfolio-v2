@@ -1,0 +1,19 @@
+@utility text-h1 {
+    @apply text-5xl leading-14 tracking-[1%];
+}
+
+@utility text-h2 {
+    @apply text-[2rem] leading-9.5 tracking-[2%];
+}
+
+@utility text-h3 {
+    @apply text-2xl leading-7.5 tracking-[2%];
+}
+
+@utility text-h4 {
+    @apply text-xl leading-6.5 tracking-[2%];
+}
+
+@utility text-p {
+    @apply text-base leading-6;
+}

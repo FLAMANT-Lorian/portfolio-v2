@@ -1,0 +1,3 @@
+@utility ease-all {
+    @apply transition-all ease-in-out duration-300;
+}
