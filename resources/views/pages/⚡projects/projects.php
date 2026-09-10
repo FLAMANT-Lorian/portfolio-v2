@@ -1,8 +1,9 @@
 <?php
 
+use Livewire\Attributes\Title;
 use Livewire\Component;
 
-new class extends Component
-{
+new #[Title('partials/header.navigation.projects.label')]
+class extends Component {
     //
 };
