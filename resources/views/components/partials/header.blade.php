@@ -1,4 +1,7 @@
-<header x-data="{ menuOpen: false }">
+<header
+    x-data="{ menuOpen: false }"
+    x-trap="menuOpen"
+    @keydown.window.escape="menuOpen = false">
     <div class="px-6 pt-6 flex flex-row items-center justify-between">
         <svg :class="menuOpen ? 'text-white' : 'text-red'"
              class="relative z-10 ease-all" width="116" height="32" viewBox="0 0 116 32"

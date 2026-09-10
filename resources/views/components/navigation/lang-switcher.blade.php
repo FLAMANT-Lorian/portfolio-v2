@@ -6,9 +6,9 @@
             @keydown.window.escape="open = false"
             :class="{
                 'border-red!' : open && !menuOpen,
-                'text-white ': menuOpen,
+                'text-white hover:border-white': menuOpen,
                 'border-white!': open && menuOpen,
-                'text-red': !menuOpen,
+                'text-red hover:border-red!': !menuOpen,
             }"
 
             class="cursor-pointer uppercase px-2 py-1 flex flex-row gap-2 items-center border border-transparent ease-all">
@@ -23,6 +23,7 @@
         }"
          class="absolute border left-0 right-0 -bottom-10 uppercase"
          x-show="open"
+         x-cloak
          x-transition:enter="transition ease-out duration-200"
          x-transition:enter-start="opacity-0 -translate-y-2"
          x-transition:enter-end="opacity-100 translate-y-0"
