@@ -6,6 +6,7 @@
 
 @import "./utilities/transitions.css";
 @import "./utilities/font-size.css";
+@import "./utilities/sizes.css";
 
 @source '../views';
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';

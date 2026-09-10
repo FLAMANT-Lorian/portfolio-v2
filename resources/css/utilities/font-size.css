@@ -15,5 +15,5 @@
 }
 
 @utility text-p {
-    @apply text-base leading-6;
+    @apply text-base leading-6 md:text-lg md:leading-6.5;
 }

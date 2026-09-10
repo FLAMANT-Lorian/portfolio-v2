@@ -4,7 +4,7 @@
     $links = Header::navigation();
 @endphp
 
-<ul class="flex flex-col gap-6 items-start">
+<ul class="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
     @foreach($links as $link)
         <li>
             <x-navigation.nav-link

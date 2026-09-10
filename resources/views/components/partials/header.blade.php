@@ -4,9 +4,11 @@
         closeMenuLabel: {{ json_encode(__("partials/header.close-bg-menu-label")) }},
         openMenuLabel: {{ json_encode(__("partials/header.open-bg-menu-label")) }},
     }"
+    @resize.window="menuOpen = false"
     x-trap="menuOpen"
-    @keydown.window.escape="menuOpen = false">
-    <div class="px-6 pt-6 flex flex-row items-center justify-between">
+    @keydown.window.escape="menuOpen = false"
+    class="screen-width">
+    <div class="px-default pt-6 flex flex-row items-center justify-between">
         <a wire:navigate
            aria-label="{{ __('partials/header.back-to-home') }}"
            title="{{ __('partials/header.back-to-home') }}"
@@ -20,13 +22,13 @@
             </svg>
             <span class="sr-only">{{ __('partials/header.back-to-home') }}</span>
         </a>
-        <div class="flex flex-row gap-6 items-center">
+        <div class="flex flex-row md:flex-row-reverse gap-6 md:gap-8 items-center">
             <x-navigation.lang-switcher/>
 
             <button
                 :title='menuOpen ? closeMenuLabel : openMenuLabel'
                 @click="menuOpen = !menuOpen"
-                class="cursor-pointer flex flex-col gap-2 relative z-10 py-1.5">
+                class="cursor-pointer flex flex-col gap-2 relative z-10 py-1.5 md:hidden">
                 <span
                     class="sr-only"
                     x-text='menuOpen ? closeMenuLabel : openMenuLabel'
