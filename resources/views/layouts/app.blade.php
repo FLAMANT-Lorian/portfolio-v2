@@ -12,7 +12,7 @@
 </head>
 <body>
     @if(app()->environment('local'))
-        <x-breakpoints/>
+        <x-tools.breakpoints/>
     @endif
 
     <x-sprite/>
