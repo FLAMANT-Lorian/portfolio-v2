@@ -1,24 +1,7 @@
 @php
-    $socials = [
-        [
-            'label' => 'Instagram',
-            'title' => 'Visiter mon profil Instagram',
-            'route' => '#',
-            'icon' => 'instagram'
-        ],
-        [
-            'label' => 'Github',
-            'title' => 'Visiter mon profil Github',
-            'route' => '#',
-            'icon' => 'github'
-        ],
-        [
-            'label' => 'LunkedIn',
-            'title' => 'Visiter mon profil LinkedIn',
-            'route' => '#',
-            'icon' => 'linkedin'
-        ],
-    ];
+    use App\Data\Header;
+
+    $socials = Header::socials();
 @endphp
 
 <ul class="justify-self-start flex flex-row gap-4 items-center">

@@ -1,17 +1,7 @@
 @php
-    $links = [
-        [
-            'label' => 'Accueil',
-            'title' => 'Vers la page d’accueil',
-            'route' => route('home'),
-            'exactRoute' => true
-        ],
-        [
-            'label' => 'Projets',
-            'title' => 'Vers la page des projets',
-            'route' => route('projects')
-        ],
-    ];
+    use App\Data\Header;
+
+    $links = Header::navigation();
 @endphp
 
 <ul class="flex flex-col gap-6 items-start">

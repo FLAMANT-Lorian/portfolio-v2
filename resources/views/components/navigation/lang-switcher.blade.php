@@ -1,9 +1,14 @@
-<div x-data="{ open: false }"
+<div x-data="{
+        open: false,
+        closeLangSwitcherLabel: {{ json_encode(__("partials/header.close-lang-switcher-menu-label")) }},
+        openLangSwitcherLabel: {{ json_encode(__("partials/header.open-lang-switcher-menu-label")) }},
+     }"
      class="relative z-10">
     <button type="button"
             @click="open = !open"
             @click.away="open = false"
             @keydown.window.escape="open = false"
+            :title="open ? closeLangSwitcherLabel : openLangSwitcherLabel"
             :class="{
                 'border-red!' : open && !menuOpen,
                 'text-white hover:border-white': menuOpen,
@@ -33,6 +38,8 @@
         @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
             @if($localeCode !== LaravelLocalization::getCurrentLocale())
                 <a wire:navigate
+                   aria-label="{{ $localeCode }}"
+                   title="{{__('partials/header.choose-language')}}"
                    class="block w-full px-2 py-1"
                    hreflang="{{ $localeCode }}"
                    href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
