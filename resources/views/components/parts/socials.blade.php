@@ -4,7 +4,7 @@
     $socials = Options::socials();
 @endphp
 
-<ul class="justify-self-start flex flex-row gap-4 items-center">
+<ul {{ $attributes->merge(['class' => 'justify-self-start flex flex-row gap-4 items-center']) }}>
     @foreach($socials as $social)
         <li>
             <a aria-label="{{ $social['label'] }}"

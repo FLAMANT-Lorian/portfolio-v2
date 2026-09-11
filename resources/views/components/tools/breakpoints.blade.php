@@ -1,4 +1,4 @@
-<div class="fixed bottom-10 left-5 w-fit flex justify-between p-2 z-[999]">
+<div class="fixed top-10 left-5 w-fit flex justify-between p-2 z-[999]">
     <div class="bg-red-500 text-white px-4 py-2 block sm:hidden">XS</div>
     <div class="bg-blue-500 text-white px-4 py-2 hidden sm:block md:hidden">SM</div>
     <div class="bg-green-500 text-white px-4 py-2 hidden md:block rg:hidden">MD</div>

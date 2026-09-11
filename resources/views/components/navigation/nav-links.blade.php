@@ -1,7 +1,7 @@
 @php
-    use App\Data\Header;
+    use App\Data\Options;
 
-    $links = Header::navigation();
+    $links = Options::navigation();
 @endphp
 
 <ul class="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
