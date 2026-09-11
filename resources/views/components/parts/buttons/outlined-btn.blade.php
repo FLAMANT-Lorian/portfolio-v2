@@ -5,7 +5,7 @@
     'blank',
 ])
 
-<a {{ $attributes->merge(['class' => 'group text-p px-3 md:px-4 py-2.5 md:py-3 bg-red text-white flex flex-row gap-3 items-center border border-red hover:bg-transparent hover:text-red focus:bg-transparent focus:text-red ease-all']) }}
+<a {{ $attributes->merge(['class' => 'group text-p px-3 md:px-4 py-2.5 md:py-3 text-black flex flex-row gap-3 items-center border border-red bg-transparent hover:bg-red hover:text-white focus:bg-transparent focus:text-red ease-all']) }}
    aria-label="{{ $label }}"
    title="{{ $title }}"
    wire:navigate

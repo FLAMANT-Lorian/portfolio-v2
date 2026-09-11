@@ -7,7 +7,7 @@
     <div class="screen-width px-default py-default grid-default">
         <h1 class="text-extra-big font-bold text-black md:col-span-8 md:mb-16 rl:mb-0 rl:col-span-9 rl:row-start-2">{{ $hero['title'] }}</h1>
         <div
-            class="flex flex-col gap-2 max-md:mt-8 max-md:mb-6 md:col-span-4 rl:row-start-1 rl:col-start-2 rl:col-span-4">
+            class="flex flex-col gap-2 max-md:mt-8 max-md:mb-6 md:col-span-4 rl:row-start-1 rl:col-start-2 rl:col-span-5 lg:col-span-4 lg:col-start-2">
             <h2 class="text-h2 text-black font-medium">{{ $hero['subtitle'] }}</h2>
             <p class="text-p text-gray-dark">{{ $hero['text'] }}</p>
         </div>
