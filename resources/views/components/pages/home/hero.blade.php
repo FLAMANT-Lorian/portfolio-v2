@@ -1,18 +1,7 @@
 @php
-    $hero = [
-        'title' => 'Flamant Lorian',
-        'subtitle' => 'Développeur Web',
-        'text' => 'Un code propre, des interfaces élégantes, et des projets performants. J’accompagne chaque idée, de son design à son déploiement, pour en faire une expérience web fluide et efficace !',
-        'button' => [
-            'label' => 'Me découvrir',
-            'title' => 'En savoir plus sur moi',
-            'route' => '#',
-        ],
-        'img' => [
-            'src' => asset('assets/img/lorian-flamant.webp'),
-            'alt' => 'Photographie de Lorian Flamant'
-        ]
-    ];
+    use App\Data\Pages\Home;
+
+    $hero = Home::hero();
 @endphp
 <div class="home-hero">
     <div class="screen-width px-default py-default grid-default">
