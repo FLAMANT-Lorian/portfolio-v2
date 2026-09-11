@@ -26,12 +26,12 @@ class Home
     {
         return [
             'title' => [
-                'part-1' => 'Découvrez mes',
-                'part-2' => 'derniers projets',
+                'part-1' => __('pages/home.projects.title.part-1'),
+                'part-2' => __('pages/home.projects.title.part-2'),
             ],
             'button' => [
-                'label' => 'Voir tous les projets',
-                'title' => 'Voir tous les projets',
+                'label' => __('pages/home.projects.button.label'),
+                'title' => __('pages/home.projects.button.title'),
                 'route' => route('projects')
             ]
         ];

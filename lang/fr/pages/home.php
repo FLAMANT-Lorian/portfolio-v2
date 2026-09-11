@@ -12,5 +12,16 @@ return [
         'img' => [
             'alt' => 'Photographie de Lorian Flamant'
         ]
+    ],
+
+    'projects' => [
+        'title' => [
+            'part-1' => 'Découvrez mes',
+            'part-2' => 'derniers projets',
+        ],
+        'button' => [
+            'label' => 'Voir tous les projets',
+            'title' => 'Voir tous les projets',
+        ]
     ]
 ];
