@@ -1,7 +1,7 @@
 @php
-    use App\Data\Header;
+    use App\Data\Options;
 
-    $socials = Header::socials();
+    $socials = Options::socials();
 @endphp
 
 <ul class="justify-self-start flex flex-row gap-4 items-center">

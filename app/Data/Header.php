@@ -20,28 +20,4 @@ class Header
             ],
         ];
     }
-
-    public static function socials(): array
-    {
-        return [
-            [
-                'label' => __('partials/header.socials.instagram.label'),
-                'title' => __('partials/header.socials.instagram.title'),
-                'route' => '#',
-                'icon' => 'instagram'
-            ],
-            [
-                'label' => __('partials/header.socials.github.label'),
-                'title' => __('partials/header.socials.github.title'),
-                'route' => '#',
-                'icon' => 'github'
-            ],
-            [
-                'label' => __('partials/header.socials.linkedin.label'),
-                'title' => __('partials/header.socials.linkedin.title'),
-                'route' => '#',
-                'icon' => 'linkedin'
-            ],
-        ];
-    }
 }

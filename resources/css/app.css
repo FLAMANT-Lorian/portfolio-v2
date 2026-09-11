@@ -9,7 +9,7 @@
 @import "./utilities/sizes.css";
 @import "./utilities/grids.css";
 
-@import "./parts/hero.css";
+@import "./parts/bg-images.css";
 
 @source '../views';
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';

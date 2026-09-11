@@ -7,6 +7,7 @@ return [
     'choose-language' => 'Choisir la langue',
     'open-bg-menu-label' => 'Ouvrir le menu',
     'close-bg-menu-label' => 'Fermer le menu',
+    'navigation-title' => 'Navigation principale',
 
     // NAVIGATION
     'navigation' => [
@@ -19,20 +20,4 @@ return [
             'title' => 'Vers la page des projets'
         ]
     ],
-
-    // SOCIALS
-    'socials' => [
-        'instagram' => [
-            'label' => 'Instagram',
-            'title' => 'Visiter mon profil Instagram'
-        ],
-        'github' => [
-            'label' => 'Github',
-            'title' => 'Visiter mon profil Github'
-        ],
-        'linkedin' => [
-            'label' => 'LinkedIn',
-            'title' => 'Visiter mon profil LinkedIn'
-        ],
-    ]
 ];
