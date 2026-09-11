@@ -15,7 +15,7 @@
            class="hover:scale-105 focus:scale-105 ease-all"
            href="{{ route('home') }}">
             <svg :class="menuOpen ? 'text-white' : 'text-red'"
-                 class="relative z-10 ease-all" width="116" height="32" viewBox="0 0 116 32"
+                 class="relative z-20 ease-all" width="116" height="32" viewBox="0 0 116 32"
                  fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <use href="#logo"></use>
@@ -28,7 +28,7 @@
             <button
                 :title='menuOpen ? closeMenuLabel : openMenuLabel'
                 @click="menuOpen = !menuOpen"
-                class="cursor-pointer flex flex-col gap-2 relative z-10 py-1.5 md:hidden">
+                class="cursor-pointer flex flex-col gap-2 relative z-20 py-1.5 md:hidden">
                 <span
                     class="sr-only"
                     x-text='menuOpen ? closeMenuLabel : openMenuLabel'

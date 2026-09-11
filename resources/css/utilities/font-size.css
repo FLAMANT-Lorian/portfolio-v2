@@ -1,9 +1,15 @@
+@utility text-extra-big {
+    font-size: clamp(56px, 9.5vw, 180px);
+    line-height: clamp(60px, 7.5vw, 160px);
+    @apply tracking-[1%] uppercase font-family-clash-display after:content-['.'] after:text-red;
+}
+
 @utility text-h1 {
-    @apply text-5xl leading-14 tracking-[1%];
+    @apply text-5xl leading-14 tracking-[1%] font-family-clash-display;
 }
 
 @utility text-h2 {
-    @apply text-[2rem] leading-9.5 tracking-[2%];
+    @apply text-[2rem] leading-9.5 tracking-[2%] font-family-clash-display;
 }
 
 @utility text-h3 {
@@ -15,5 +21,5 @@
 }
 
 @utility text-p {
-    @apply text-base leading-6 md:text-lg md:leading-6.5;
+    @apply text-base leading-6 md:text-lg md:leading-6.5 font-normal font-family-dm-sans;
 }

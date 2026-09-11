@@ -1,0 +1,13 @@
+.home-hero {
+    @apply relative;
+
+    &:after {
+        content: '';
+        background-image: url("../../img/svg/pattern-bg.svg");
+
+        width: clamp(140px, 25vw, 380px);
+        height: clamp(140px, 25vw, 380px);
+
+        @apply absolute -z-10 bottom-0 right-0 bg-contain bg-no-repeat bg-center;
+    }
+}

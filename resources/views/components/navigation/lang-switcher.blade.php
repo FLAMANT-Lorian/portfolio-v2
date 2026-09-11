@@ -3,7 +3,7 @@
         closeLangSwitcherLabel: {{ json_encode(__("partials/header.close-lang-switcher-menu-label")) }},
         openLangSwitcherLabel: {{ json_encode(__("partials/header.open-lang-switcher-menu-label")) }},
      }"
-     class="relative z-10">
+     class="relative z-20">
     <button type="button"
             @click="open = !open"
             @click.away="open = false"
@@ -11,9 +11,9 @@
             :title="open ? closeLangSwitcherLabel : openLangSwitcherLabel"
             :class="{
                 'border-red!' : open && !menuOpen,
-                'text-white hover:border-white': menuOpen,
+                'text-white hover:border-white focus:border-white': menuOpen,
                 'border-white!': open && menuOpen,
-                'text-red hover:border-red!': !menuOpen,
+                'text-red hover:border-red! focus:border-red!': !menuOpen,
             }"
 
             class="cursor-pointer uppercase px-2 py-1 flex flex-row gap-2 items-center border border-transparent ease-all">

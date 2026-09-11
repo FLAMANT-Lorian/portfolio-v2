@@ -1,4 +1,4 @@
-
-<div>
-    HELLO
-</div>
+<main>
+    {{-- HERO --}}
+    <x-pages.home.hero/>
+</main>

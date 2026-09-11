@@ -9,6 +9,7 @@
         <li>
             <a aria-label="{{ $social['label'] }}"
                target="_blank"
+               title="{{ $social['title'] }}"
                class="block text-white hover:scale-120 focus:scale-120 ease-all"
                href="{{ $social['route'] }}">
                 <span class="sr-only">{{ $social['label'] }}</span>
