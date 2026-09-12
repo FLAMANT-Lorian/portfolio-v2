@@ -19,6 +19,7 @@ class ProjectSeeder extends Seeder
         $project1Tags = [$website, $web_application];
         Project::create([
             'name' => 'Le Vieux Moulin',
+            'slug' => 'le-vieux-moulin',
             'excerpt' => 'Site vitrine du Vieux Moulin de Strainchamps',
             'featured_image' => 'assets/img/projects/lvm/lvm-card.webp',
             'featured_image_alt' => 'Présentation du site du Vieux Moulin de Strainchamps',
@@ -33,6 +34,7 @@ class ProjectSeeder extends Seeder
         $project2Tags = [$design, $mobile_application];
         Project::create([
             'name' => 'Meet’us',
+            'slug' => 'meet-us',
             'excerpt' => 'Site vitrine du Vieux Moulin de Strainchamps',
             'featured_image' => 'assets/img/projects/lvm/lvm-card.webp',
             'featured_image_alt' => 'Présentation du site du Vieux Moulin de Strainchamps',
@@ -46,6 +48,7 @@ class ProjectSeeder extends Seeder
 
         Project::create([
             'name' => 'Portfolio',
+            'slug' => 'portfolio',
             'excerpt' => 'Site vitrine du Vieux Moulin de Strainchamps',
             'featured_image' => 'assets/img/projects/lvm/lvm-card.webp',
             'featured_image_alt' => 'Présentation du site du Vieux Moulin de Strainchamps',

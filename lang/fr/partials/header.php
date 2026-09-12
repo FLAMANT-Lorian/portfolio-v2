@@ -18,6 +18,10 @@ return [
         'projects' => [
             'label' => 'Projets',
             'title' => 'Vers la page des projets'
+        ],
+        'project' => [
+            'label' => 'Projet',
+            'title' => 'Vers la page du projet'
         ]
     ],
 ];

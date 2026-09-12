@@ -11,7 +11,7 @@
 @endphp
 
 <div {{ $attributes->merge(['class' => 'relative aspect-square group overflow-hidden max-h-120 w-full']) }}>
-    <a href="#"
+    <a href="{{ route('projects.show', $project) }}"
        wire:navigate
        class="absolute inset-0 z-3"
        title="{{ __('partials/cards.view-project') . $project->name }}"

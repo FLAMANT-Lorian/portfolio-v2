@@ -2,5 +2,8 @@
 
 return [
     'home' => '/',
-    'projects' => 'projets',
+    'projects' => [
+        'index' => 'projets',
+        'show' => 'projets/{project:slug}',
+    ],
 ];
