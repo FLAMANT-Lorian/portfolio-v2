@@ -58,17 +58,15 @@
             </div>
             <div class="flex flex-col gap-4 text-center">
                 @if(!empty($this->tags))
-                    <button>
-                        <button type="button"
-                                wire:click="resetFilter()"
-                                class="group cursor-pointer btn-outlined text-base py-2 justify-center"
-                                title="{{ __('pages/projects.filter.reset-filter-title') }}">
-                            <span>{{ __('pages/projects.filter.reset-filter-title') }}</span>
-                            @if(count($this->tags))
-                                <span
-                                    class="text-base font-family-dm-sans bg-red ease-all text-white group-hover:bg-white group-hover:text-red group-focus:bg-white group-focus:text-red rounded-full min-w-6 min-h-6 aspect-square flex justify-center items-center">{{ count($this->tags) }}</span>
-                            @endif
-                        </button>
+                    <button type="button"
+                            wire:click="resetFilter()"
+                            class="group cursor-pointer btn-outlined text-base py-2 justify-center"
+                            title="{{ __('pages/projects.filter.reset-filter-title') }}">
+                        <span>{{ __('pages/projects.filter.reset-filter-title') }}</span>
+                        @if(count($this->tags))
+                            <span
+                                class="text-base font-family-dm-sans bg-red ease-all text-white group-hover:bg-white group-hover:text-red group-focus:bg-white group-focus:text-red rounded-full min-w-6 min-h-6 aspect-square flex justify-center items-center">{{ count($this->tags) }}</span>
+                        @endif
                     </button>
                 @endif
                 <button type="button"
