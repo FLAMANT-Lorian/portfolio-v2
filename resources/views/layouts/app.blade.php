@@ -10,7 +10,7 @@
 
     @livewireStyles
 </head>
-<body>
+<body class="bg-white">
     @if(app()->environment('local'))
         <x-tools.breakpoints/>
     @endif

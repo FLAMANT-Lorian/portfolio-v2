@@ -3,7 +3,7 @@
 
     $hero = Projects::hero();
 @endphp
-<div class="projects-hero">
+<div class="projects-hero" x-data="{ sidebarOpen: false }">
     <div class="screen-width px-default py-default pb-14 grid-default gap-y-8">
         <div class="flex flex-col gap-2 col-span-full">
             <h1 class="text-h1 text-black font-semibold">{{ $hero['title'] }}</h1>
@@ -20,6 +20,7 @@
                        placeholder="{{ $hero['fields']['search']['placeholder'] }}">
             </div>
             <button type="button"
+                    @click="sidebarOpen = true"
                     title="{{ $hero['fields']['filter']['title'] }}"
                     class="flex flex-row gap-3 items-center justify-center cursor-pointer text-base font-family-dm-sans py-2 px-4 border border-red bg-red text-white hover:bg-white focus:bg-white hover:text-red focus:text-red ease-all">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,6 +28,10 @@
                 </svg>
                 <span>{{ $hero['fields']['filter']['label'] }}</span>
             </button>
+
         </div>
     </div>
+    
+    {{-- FILTER SIDEBAR --}}
+    <x-parts.filter-sidebar/>
 </div>

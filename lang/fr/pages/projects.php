@@ -15,6 +15,16 @@ return [
             ]
         ]
     ],
+    'filter' => [
+        'title' => 'Filtrer les projets',
+        'close-filter' => [
+            'label' => 'Fermer les filtres',
+            'title' => 'Fermer les filtres',
+        ],
+        'types' => [
+            'label' => 'Type de projet'
+        ]
+    ],
     'projects' => [
         'title' => 'Liste des projets',
         'pagination-title' => 'Pagination des projets'

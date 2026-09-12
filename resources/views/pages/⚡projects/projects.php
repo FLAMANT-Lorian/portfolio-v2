@@ -15,6 +15,10 @@ class extends Component {
     #[Url]
     public string $search = '';
 
+    public array $tags = [];
+
+    public array $tag_for_request = [];
+
     #[Computed]
     public function projects()
     {
@@ -25,5 +29,20 @@ class extends Component {
         }
 
         return $query->paginate(6);
+    }
+
+    public function toggleTag(string $tag): void
+    {
+        if (in_array($tag, $this->tags)) {
+            $this->tags = array_diff($this->tags, [$tag]);
+        } else {
+            $this->tags[] = $tag;
+        }
+    }
+
+    public function applyFilter()
+    {
+        $this->tag_for_request = $this->tags;
+        $this->resetPage();
     }
 };
