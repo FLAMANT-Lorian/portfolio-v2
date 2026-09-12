@@ -8,6 +8,7 @@
 @import "./utilities/font-size.css";
 @import "./utilities/sizes.css";
 @import "./utilities/grids.css";
+@import "./utilities/buttons.css";
 
 @import "./parts/bg-images.css";
 @import "./parts/skip-links.css";
