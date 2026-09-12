@@ -18,46 +18,35 @@ class ProjectSeeder extends Seeder
 
         $project1Tags = [$website, $web_application];
         Project::create([
-            'name' => 'Le Vieux Moulin',
+            'name' => [
+                'fr' => 'Le Vieux Moulin',
+                'en' => 'Le Vieux Moulin'
+            ],
             'slug' => 'le-vieux-moulin',
-            'excerpt' => 'Site vitrine du Vieux Moulin de Strainchamps',
+            'excerpt' => [
+                'fr' => 'Site vitrine du Vieux Moulin de Strainchamps',
+                'en' => 'Showcase website for the Old Mill at Strainchamps'
+            ],
             'featured_image' => 'assets/img/projects/lvm/lvm-card.webp',
-            'featured_image_alt' => 'Présentation du site du Vieux Moulin de Strainchamps',
-            'description' => 'Réalisation d’un site internet pour l’ASBL Le Vieux Moulin. Ce projet m’a permis d’améliorer mes compétences en design et développement avec WordPress mais aussi en gestion de l’information pour de garder une structure à la fois simple et cohérente.',
+            'featured_image_alt' => [
+                'fr' => 'Présentation du site du Vieux Moulin de Strainchamps',
+                'en' => 'Introduction to the Vieux Moulin de Strainchamps website'
+            ],
+            'description' => [
+                'fr' => 'Réalisation d’un site internet pour l’ASBL Le Vieux Moulin. Ce projet m’a permis d’améliorer mes compétences en design et développement avec WordPress mais aussi en gestion de l’information pour de garder une structure à la fois simple et cohérente.',
+                'en' => 'Development of a website for the non-profit organisation Le Vieux Moulin. This project enabled me to improve my skills in design and development using WordPress, as well as in information management, to ensure the site had a structure that was both simple and consistent.'
+            ],
             'website_url' => 'https://le-vieux-moulin.lorianflamant.com/',
             'github_url' => 'https://github.com/FLAMANT-Lorian/ASBL-Le-vieux-moulin-site',
-            'context' => 'Le fait que l’ASBL ne possédait pas encore de site internet était pour moi une des premières difficultés car je ne connaissait pas du tout le terme SRG, j’ai donc fait des recherches afin de mieux comprendre les besoins de mon client.',
-            'result' => 'Le fait que l’ASBL ne possédait pas encore de site internet était pour moi une des premières difficultés car je ne connaissait pas du tout le terme SRG, j’ai donc fait des recherches afin de mieux comprendre les besoins de mon client.',
+            'context' => [
+                'fr' => 'Le fait que l’ASBL ne possédait pas encore de site internet était pour moi une des premières difficultés car je ne connaissait pas du tout le terme SRG, j’ai donc fait des recherches afin de mieux comprendre les besoins de mon client.',
+                'en' => 'The lack of a website for the non-profit organisation Le Vieux Moulin was a challenge for me, as I was not familiar with the term SRG, so I did research to better understand the needs of my client.'
+            ],
+            'result' => [
+                'fr' => 'Le fait que l’ASBL ne possédait pas encore de site internet était pour moi une des premières difficultés car je ne connaissait pas du tout le terme SRG, j’ai donc fait des recherches afin de mieux comprendre les besoins de mon client.',
+                'en' => 'The lack of a website for the non-profit organisation Le Vieux Moulin was a challenge for me, as I was not familiar with the term SRG, so I did research to better understand the needs of my client.'
+            ],
             'images' => []
         ])->tags()->attach($project1Tags);
-
-        $project2Tags = [$design, $mobile_application];
-        Project::create([
-            'name' => 'Meet’us',
-            'slug' => 'meet-us',
-            'excerpt' => 'Site vitrine du Vieux Moulin de Strainchamps',
-            'featured_image' => 'assets/img/projects/lvm/lvm-card.webp',
-            'featured_image_alt' => 'Présentation du site du Vieux Moulin de Strainchamps',
-            'description' => 'Réalisation d’un site internet pour l’ASBL Le Vieux Moulin. Ce projet m’a permis d’améliorer mes compétences en design et développement avec WordPress mais aussi en gestion de l’information pour de garder une structure à la fois simple et cohérente.',
-            'website_url' => 'https://le-vieux-moulin.lorianflamant.com/',
-            'github_url' => 'https://github.com/FLAMANT-Lorian/ASBL-Le-vieux-moulin-site',
-            'context' => 'Le fait que l’ASBL ne possédait pas encore de site internet était pour moi une des premières difficultés car je ne connaissait pas du tout le terme SRG, j’ai donc fait des recherches afin de mieux comprendre les besoins de mon client.',
-            'result' => 'Le fait que l’ASBL ne possédait pas encore de site internet était pour moi une des premières difficultés car je ne connaissait pas du tout le terme SRG, j’ai donc fait des recherches afin de mieux comprendre les besoins de mon client.',
-            'images' => []
-        ])->tags()->attach($project2Tags);
-
-        Project::create([
-            'name' => 'Portfolio',
-            'slug' => 'portfolio',
-            'excerpt' => 'Site vitrine du Vieux Moulin de Strainchamps',
-            'featured_image' => 'assets/img/projects/lvm/lvm-card.webp',
-            'featured_image_alt' => 'Présentation du site du Vieux Moulin de Strainchamps',
-            'description' => 'Réalisation d’un site internet pour l’ASBL Le Vieux Moulin. Ce projet m’a permis d’améliorer mes compétences en design et développement avec WordPress mais aussi en gestion de l’information pour de garder une structure à la fois simple et cohérente.',
-            'website_url' => 'https://le-vieux-moulin.lorianflamant.com/',
-            'github_url' => 'https://github.com/FLAMANT-Lorian/ASBL-Le-vieux-moulin-site',
-            'context' => 'Le fait que l’ASBL ne possédait pas encore de site internet était pour moi une des premières difficultés car je ne connaissait pas du tout le terme SRG, j’ai donc fait des recherches afin de mieux comprendre les besoins de mon client.',
-            'result' => 'Le fait que l’ASBL ne possédait pas encore de site internet était pour moi une des premières difficultés car je ne connaissait pas du tout le terme SRG, j’ai donc fait des recherches afin de mieux comprendre les besoins de mon client.',
-            'images' => []
-        ]);
     }
 }

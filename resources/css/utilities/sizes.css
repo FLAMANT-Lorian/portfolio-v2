@@ -13,3 +13,7 @@
 @utility pb-default {
     @apply pb-18 rl:pb-30;
 }
+
+@utility pt-default {
+    @apply pt-18 rl:pt-30;
+}

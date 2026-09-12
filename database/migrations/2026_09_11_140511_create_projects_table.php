@@ -9,16 +9,16 @@ return new class extends Migration {
     {
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->json('name');
             $table->string('slug');
-            $table->string('excerpt');
+            $table->json('excerpt');
             $table->string('featured_image');
-            $table->string('featured_image_alt');
-            $table->text('description');
+            $table->json('featured_image_alt');
+            $table->json('description');
             $table->text('website_url');
             $table->text('github_url');
-            $table->text('context');
-            $table->text('result');
+            $table->json('context');
+            $table->json('result');
             $table->json('images');
             $table->timestamps();
         });
