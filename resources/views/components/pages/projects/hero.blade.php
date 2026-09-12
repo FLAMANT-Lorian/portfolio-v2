@@ -22,16 +22,20 @@
             <button type="button"
                     @click="sidebarOpen = true"
                     title="{{ $hero['fields']['filter']['title'] }}"
-                    class="flex flex-row gap-3 items-center justify-center cursor-pointer text-base font-family-dm-sans py-2 px-4 border border-red bg-red text-white hover:bg-white focus:bg-white hover:text-red focus:text-red ease-all">
+                    class="group flex flex-row gap-3 items-center justify-center cursor-pointer text-base font-family-dm-sans py-2 px-4 border border-red bg-red text-white hover:bg-white focus:bg-white hover:text-red focus:text-red ease-all">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <use href="#filter"></use>
                 </svg>
                 <span>{{ $hero['fields']['filter']['label'] }}</span>
+                @if(count($this->tags))
+                    <span
+                        class="text-base font-family-dm-sans bg-white ease-all text-red group-hover:bg-red group-hover:text-white group-focus:bg-red group-focus:text-white rounded-full min-w-6 min-h-6 aspect-square flex justify-center items-center">{{ count($this->tags) }}</span>
+                @endif
             </button>
 
         </div>
     </div>
-    
+
     {{-- FILTER SIDEBAR --}}
     <x-parts.filter-sidebar/>
 </div>

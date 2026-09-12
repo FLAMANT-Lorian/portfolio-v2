@@ -17,6 +17,7 @@ return [
     ],
     'filter' => [
         'title' => 'Filtrer les projets',
+        'reset-filter-title' => 'Retirer les filtres',
         'close-filter' => [
             'label' => 'Fermer les filtres',
             'title' => 'Fermer les filtres',

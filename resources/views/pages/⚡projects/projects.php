@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Project;
+use Illuminate\Database\Eloquent\Builder;
 use Livewire\Attributes\Computed;
 use Livewire\Attributes\Title;
 use Livewire\Attributes\Url;
@@ -17,7 +18,7 @@ class extends Component {
 
     public array $tags = [];
 
-    public array $tag_for_request = [];
+    public array $tags_for_request = [];
 
     #[Computed]
     public function projects()
@@ -26,6 +27,12 @@ class extends Component {
 
         if ($this->search) {
             $query->whereLike('name', '%' . $this->search . '%');
+        }
+
+        if (!empty($this->tags_for_request)) {
+            $query->whereHas('tags', function (Builder $query) {
+                $query->whereIn('name', $this->tags_for_request);
+            });
         }
 
         return $query->paginate(6);
@@ -40,9 +47,16 @@ class extends Component {
         }
     }
 
-    public function applyFilter()
+    public function applyFilter(): void
     {
-        $this->tag_for_request = $this->tags;
+        $this->tags_for_request = $this->tags;
+        $this->resetPage();
+    }
+
+    public function resetFilter(): void
+    {
+        $this->tags = [];
+        $this->tags_for_request = [];
         $this->resetPage();
     }
 };
