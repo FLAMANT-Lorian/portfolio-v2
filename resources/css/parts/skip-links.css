@@ -1,3 +1,3 @@
 .skip-link {
-    @apply text-p fixed z-50 -top-full focus:top-8 left-1/2 -translate-x-1/2 px-4 py-3 bg-red text-white border border-red ease-all;
+    @apply btn fixed z-50 -top-full focus:top-8 left-1/2 -translate-x-1/2 bg-red text-white border border-red ease-all;
 }

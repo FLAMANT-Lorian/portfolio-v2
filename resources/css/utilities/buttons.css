@@ -7,6 +7,6 @@
 }
 
 @utility btn-outlined {
-    @apply btn text-black  border border-red bg-transparent hover:bg-red hover:text-white focus:bg-transparent focus:text-red;
+    @apply btn text-black  border border-red bg-transparent hover:bg-red hover:text-white focus:text-white focus:bg-red focus:text-red;
 }
 

@@ -13,10 +13,10 @@
         <a wire:navigate
            aria-label="{{ __('partials/header.back-to-home') }}"
            title="{{ __('partials/header.back-to-home') }}"
-           class="hover:scale-105 focus:scale-105 ease-all"
+           class="relative z-20 hover:scale-105 focus:scale-105 ease-all"
            href="{{ route('home') }}">
             <svg :class="menuOpen ? 'text-white' : 'text-red'"
-                 class="relative z-20 ease-all" width="116" height="32" viewBox="0 0 116 32"
+                 class="ease-all" width="116" height="32" viewBox="0 0 116 32"
                  fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <use href="#logo"></use>
