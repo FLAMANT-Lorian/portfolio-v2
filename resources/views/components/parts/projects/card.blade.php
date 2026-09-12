@@ -10,7 +10,7 @@
      */
 @endphp
 
-<div {{ $attributes->merge(['class' => 'relative aspect-square group overflow-hidden']) }}>
+<div {{ $attributes->merge(['class' => 'relative aspect-square group overflow-hidden max-h-120 w-full']) }}>
     <a href="#"
        wire:navigate
        class="absolute inset-0 z-3"

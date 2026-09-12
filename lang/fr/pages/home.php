@@ -20,8 +20,8 @@ return [
             'part-2' => 'derniers projets',
         ],
         'button' => [
-            'label' => 'Voir tous les projets',
-            'title' => 'Voir tous les projets',
+            'label' => 'Voir tous mes projets',
+            'title' => 'Voir tous mes projets',
         ]
     ]
 ];

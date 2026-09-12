@@ -1,4 +1,10 @@
+<main id="main">
+    {{-- HERO --}}
+    <x-pages.projects.hero/>
 
-<div>
-    {{-- Smile, breathe, and go slowly. - Thich Nhat Hanh --}}
-</div>
+    {{-- PROJECTS --}}
+    <x-pages.projects.projects/>
+
+    {{-- CTA --}}
+    <x-parts.cta/>
+</main>

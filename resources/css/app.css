@@ -12,6 +12,7 @@
 
 @import "./parts/bg-images.css";
 @import "./parts/skip-links.css";
+@import "./parts/forms.css";
 
 @source '../views';
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';

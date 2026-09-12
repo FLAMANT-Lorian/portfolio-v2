@@ -9,3 +9,7 @@
 @utility py-default {
     @apply py-18 rl:py-30;
 }
+
+@utility pb-default {
+    @apply pb-18 rl:pb-30;
+}
