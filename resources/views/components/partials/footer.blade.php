@@ -8,7 +8,7 @@
     $legals = Options::legals()
 @endphp
 
-<footer class="bg-red">
+<footer class="bg-red" id="footer">
     <h2 class="sr-only">{{ __('partials/footer.navigation-title') }}</h2>
     <div class="screen-width grid-default px-default py-18 rl:py-23 gap-y-8">
         <div class="md:col-span-4 rl:col-span-3">

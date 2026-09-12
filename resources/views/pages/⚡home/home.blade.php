@@ -1,4 +1,4 @@
-<main>
+<main id="main">
     {{-- HERO --}}
     <x-pages.home.hero/>
 
