@@ -27,7 +27,7 @@ class About
                 'blank' => false
             ],
             'image' => [
-                'src' => 'assets/img/projects/lvm/lvm-card.webp',
+                'src' => 'desk-lorian.webp',
                 'alt' => __('pages/about.text-media.image_alt')
             ]
         ];

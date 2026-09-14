@@ -16,7 +16,7 @@ class Home
                 'route' => '#',
             ],
             'img' => [
-                'src' => asset('assets/img/lorian-flamant.webp'),
+                'src' => 'photo-lorian.webp',
                 'alt' => __('pages/home.hero.img.alt')
             ]
         ];

@@ -28,8 +28,8 @@
         :base_info="$text_media"
         :title="$project->name"
         :description="$project->description"
-        :image="$project->featured_image"
-        :imageAlt="$project->featured_image_alt"
+        :image="$project->hero_image"
+        :imageAlt="$project->hero_image_alt"
         :button_1_link="$project->website_url"
         :button_2_link="$project->github_url"
     />

@@ -26,9 +26,19 @@
                         :arrow="false"/>
                 </div>
             </div>
-            <img src="{{ asset($content['image']['src']) }}"
+            <img srcset="
+                @foreach(config('images.text-media-sizes') as $size)
+                    {{ asset('assets/img/about/' . $size . '/' . $content['image']['src']) }} {{ $size }}w{{ !$loop->last ? ', ' : '' }}
+                @endforeach
+                "
+                 sizes="(max-width: 767px) 100vw, (max-width: 1023px) 800px, (max-width: 1239px) 480px, (max-width: 1619px) 600px, 650px"
+                 src="{{ asset('assets/img/projects/about/original/' . $content['image']['src']) }}"
                  alt="{{ $content['image']['alt'] }}"
-                 class="max-h-120 w-full object-cover aspect-square rg:aspect-1.5/1 lg:aspect-video col-span-full rg:col-span-4 rl:col-start-7 rl:col-span-6">
+                 width="2000"
+                 height="1500"
+                 fetchpriority="high"
+                 class="max-h-120 w-full object-cover aspect-square rg:aspect-1.5/1 lg:aspect-video col-span-full rg:col-span-4 rl:col-start-7 rl:col-span-6"
+            />
         </div>
     </div>
 </div>

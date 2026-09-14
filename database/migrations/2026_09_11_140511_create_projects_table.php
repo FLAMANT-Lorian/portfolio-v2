@@ -14,6 +14,8 @@ return new class extends Migration {
             $table->json('excerpt');
             $table->string('featured_image');
             $table->json('featured_image_alt');
+            $table->string('hero_image');
+            $table->json('hero_image_alt');
             $table->json('description');
             $table->text('website_url');
             $table->text('github_url');

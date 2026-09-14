@@ -19,7 +19,15 @@
         <span class="sr-only">{{ __('partials/cards.view-project') . $project->name }}</span>
     </a>
     <img class="absolute inset-0 group-hover:scale-105 group-focus-within:scale-105 ease-all object-cover w-full h-full"
-         src="{{ asset($project->featured_image) }}"
+         srcset="
+         @foreach(config('images.project-card-sizes') as $size)
+            {{ asset('assets/img/projects/cards/' . $size . '/' . $project->featured_image) }} {{ $size }}w{{ !$loop->last ? ', ' : '' }}
+         @endforeach
+         "
+         sizes="(max-width: 1023px) 100vw, (max-width: 1239px) 320px, (max-width: 1619px) 400px, 420px"
+         width="1000"
+         height="1000"
+         src="{{ asset('assets/img/projects/cards/original/' . $project->featured_image) }}"
          alt="{{ $project->featured_image_alt }}">
     <span aria-hidden="true"
           class="absolute inset-0 z-1 bg-[linear-gradient(180deg,rgba(217,217,217,0)_0%,rgba(16,12,8,0.7)_80.29%)]"></span>

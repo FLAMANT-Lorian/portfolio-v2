@@ -12,10 +12,19 @@
             <span class="text-h4 font-medium text-gray-dark">{{ $base_info['title']['part-1'] }}</span>
             <span class="text-h2 font-medium text-red">{{ $base_info['title']['part-2'] }}</span>
         </h2>
-        <div wire:ignore class="grid gap-6 md:gap-10 rl:gap-14 md:col-span-full">
+        <div class="grid gap-6 md:gap-10 rl:gap-14 md:col-span-full">
             @foreach($images as $image)
                 <img class="w-full custom-shadow"
-                     src="{{ asset($image['path']) }}"
+                     sizes="(max-width: 767px) calc(100vw - 48px), (max-width: 1023px) calc(100vw - 96px), (max-width: 1239px) calc(100vw - 144px), (max-width: 1619px) calc(100vw - 192px), calc(100vw - 288px)"
+                     srcset="
+                        @foreach(config('images.project-gallery') as $size)
+                            {{ asset('assets/img/projects/' . $size . '/' . $image['path']) }} {{ $size }}w{{ !$loop->last ? ', ' : '' }}
+                        @endforeach
+                     "
+                     loading="lazy"
+                     width="2000"
+                     height="1300"
+                     src="{{ asset('assets/img/projects/2000/' . $image['path']) }}"
                      alt="{{ $image['alt'][LaravelLocalization::getCurrentLocale()] }}">
             @endforeach
         </div>
