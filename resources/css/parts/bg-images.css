@@ -1,4 +1,4 @@
-.home-hero, .project-hero, .about-hero {
+.home-hero, .project-hero, .about-hero, .errors-page {
     @apply relative;
 
     &:after {

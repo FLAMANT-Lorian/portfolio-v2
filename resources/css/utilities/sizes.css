@@ -17,3 +17,7 @@
 @utility pt-default {
     @apply pt-18 rl:pt-30;
 }
+
+@utility errors-page {
+    @apply pt-30 pb-40 rl:pt-40 rl:pb-60;
+}
