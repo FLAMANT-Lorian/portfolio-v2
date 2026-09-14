@@ -15,7 +15,7 @@
         <div class="grid md:grid-cols-2 rg:grid-cols-3 gap-6 md:col-span-full">
             @foreach($projects as $project)
                 <x-parts.projects.card
-                    class="md:last:col-span-2 rg:col-span-1! md:last:aspect-2/1 rg:last:aspect-square"
+                    class="md:last:col-span-2 rg:col-span-1!"
                     :project="$project"/>
             @endforeach
         </div>

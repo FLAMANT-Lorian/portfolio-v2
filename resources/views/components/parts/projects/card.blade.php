@@ -10,7 +10,7 @@
      */
 @endphp
 
-<div {{ $attributes->merge(['class' => 'relative aspect-square group overflow-hidden max-h-120 w-full']) }}>
+<div {{ $attributes->merge(['class' => 'relative aspect-square group overflow-hidden max-h-160 w-full']) }}>
     <a href="{{ route('projects.show', $project) }}"
        wire:navigate
        class="absolute inset-0 z-3"
@@ -20,7 +20,7 @@
     </a>
     <img class="absolute inset-0 group-hover:scale-105 group-focus-within:scale-105 ease-all"
          src="{{ asset($project->featured_image) }}"
-         alt="{{ asset($project->featured_image_alt) }}">
+         alt="{{ $project->featured_image_alt }}">
     <span aria-hidden="true"
           class="absolute inset-0 z-1 bg-[linear-gradient(180deg,rgba(217,217,217,0)_0%,rgba(16,12,8,0.7)_80.29%)]"></span>
     <div class="relative z-2 w-full h-full flex">
