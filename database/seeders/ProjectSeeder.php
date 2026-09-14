@@ -18,10 +18,7 @@ class ProjectSeeder extends Seeder
 
         $project1Tags = [$website, $web_application];
         Project::create([
-            'name' => [
-                'fr' => 'Le Vieux Moulin',
-                'en' => 'Le Vieux Moulin'
-            ],
+            'name' => 'Le Vieux Moulin',
             'slug' => 'le-vieux-moulin',
             'excerpt' => [
                 'fr' => 'Site vitrine du Vieux Moulin de Strainchamps',

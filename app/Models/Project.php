@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Spatie\Translatable\Attributes\Translatable;
 use Spatie\Translatable\HasTranslations;
 
-#[Translatable('name', 'excerpt', 'description', 'context', 'result', 'featured_image_alt')]
+#[Translatable('excerpt', 'description', 'context', 'result', 'featured_image_alt')]
 class Project extends Model
 {
     use HasTranslations;
