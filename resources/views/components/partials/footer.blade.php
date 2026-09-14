@@ -20,7 +20,7 @@
                            @if($navigation_link['exactRoute'])
                                wire:current.exact="font-bold before:w-2 before:h-2 hover:font-bold!"
                            @else
-                               wire:current.exact="font-bold before:w-2 before:h-2 hover:font-bold!"
+                               wire:current="font-bold before:w-2 before:h-2 hover:font-bold!"
                            @endif
                            class="hover:font-semibold focus:font-semibold text-p text-white ease-all flex flex-row gap-2 items-center before:content-[''] before:block before:w-0 before:h-0 before:bg-white"
                            aria-label="{{ $navigation_link['label'] }}"

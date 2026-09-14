@@ -7,6 +7,8 @@
 
     $about = Project::about();
 
+    $gallery = Project::gallery();
+
     $project = $this->project;
 @endphp
 
@@ -33,9 +35,14 @@
     />
 
     {{-- ABOUT --}}
-    <x-parts.block.project-about
+    <x-pages.project.about
         :base_info="$about"
         :context="$project->context"
         :result="$project->result"
+    />
+
+    {{-- GALLERY --}}
+    <x-pages.project.gallery
+        :base_info="$gallery"
     />
 </main>

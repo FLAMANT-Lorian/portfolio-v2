@@ -4,7 +4,7 @@
     'result'
 ])
 
-<div class="project-about bg-beige">
+<section class="project-about bg-beige">
     <div class="screen-width grid-default px-default py-default gap-y-8 rl:gap-y-10">
         <h2 class="text-h2 text-center font-medium text-black col-span-full">{{ $base_info['title'] }}</h2>
         <div class="flex flex-col md:flex-row md:justify-between rl:grid-default gap-10 col-span-full">
@@ -26,4 +26,4 @@
             />
         </div>
     </div>
-</div>
+</section>

@@ -42,4 +42,19 @@ class Project
             ]
         ];
     }
+
+    public static function gallery(): array
+    {
+        return [
+            'title' => [
+                'part-1' => __('pages/project.gallery.title.part-1'),
+                'part-2' => __('pages/project.gallery.title.part-2'),
+            ],
+            'back-btn' => [
+                'label' => __('pages/project.back-btn.label'),
+                'title' => __('pages/project.back-btn.title'),
+                'route' => route('projects'),
+            ],
+        ];
+    }
 }

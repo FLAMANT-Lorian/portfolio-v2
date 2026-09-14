@@ -46,7 +46,36 @@ class ProjectSeeder extends Seeder
                 'fr' => 'Le fait que l’ASBL ne possédait pas encore de site internet était pour moi une des premières difficultés car je ne connaissait pas du tout le terme SRG, j’ai donc fait des recherches afin de mieux comprendre les besoins de mon client.',
                 'en' => 'The lack of a website for the non-profit organisation Le Vieux Moulin was a challenge for me, as I was not familiar with the term SRG, so I did research to better understand the needs of my client.'
             ],
-            'images' => []
+            'images' => [
+                [
+                    'path' => 'assets/img/projects/lvm/lvm-card.webp',
+                    'alt' => [
+                        'fr' => 'Vue de la façade du Vieux Moulin',
+                        'en' => 'Front view of the Old Mill'
+                    ]
+                ],
+                [
+                    'path' => 'assets/img/projects/lvm/lvm-card.webp',
+                    'alt' => [
+                        'fr' => 'Vue de la façade du Vieux Moulin',
+                        'en' => 'Front view of the Old Mill'
+                    ]
+                ],
+                [
+                    'path' => 'assets/img/projects/lvm/lvm-card.webp',
+                    'alt' => [
+                        'fr' => 'Vue de la façade du Vieux Moulin',
+                        'en' => 'Front view of the Old Mill'
+                    ]
+                ],
+                [
+                    'path' => 'assets/img/projects/lvm/lvm-card.webp',
+                    'alt' => [
+                        'fr' => 'Vue de la façade du Vieux Moulin',
+                        'en' => 'Front view of the Old Mill'
+                    ]
+                ],
+            ],
         ])->tags()->attach($project1Tags);
     }
 }

@@ -25,4 +25,10 @@ return [
             'title' => 'Résultat',
         ]
     ],
+    'gallery' => [
+        'title' => [
+            'part-1' => 'Découvrez le projet',
+            'part-2' => 'en images',
+        ]
+    ]
 ];
