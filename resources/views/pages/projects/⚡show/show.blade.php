@@ -24,7 +24,7 @@
     </div>
 
     {{-- HERO --}}
-    <x-parts.block.text-media
+    <x-pages.project.text-media
         :base_info="$text_media"
         :title="$project->name"
         :description="$project->description"

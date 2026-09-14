@@ -46,6 +46,12 @@ class Options
                 'route' => route('projects'),
                 'exactRoute' => false
             ],
+            [
+                'label' => __('partials/header.navigation.about.label'),
+                'title' => __('partials/header.navigation.about.title'),
+                'route' => route('about'),
+                'exactRoute' => true
+            ]
         ];
     }
 

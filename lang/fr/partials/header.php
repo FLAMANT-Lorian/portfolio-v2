@@ -22,6 +22,10 @@ return [
         'project' => [
             'label' => 'Projet',
             'title' => 'Vers la page du projet'
+        ],
+        'about' => [
+            'label' => 'À propos',
+            'title' => 'Vers la page à propos'
         ]
     ],
 ];
