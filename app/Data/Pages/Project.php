@@ -17,13 +17,15 @@ class Project
     {
         return [
             'title' => __('pages/project.text-media.title'),
-            'website' => [
+            'btn-1' => [
                 'label' => __('pages/project.text-media.website.label'),
                 'title' => __('pages/project.text-media.website.title'),
+                'blank' => true
             ],
-            'github' => [
+            'btn-2' => [
                 'label' => __('pages/project.text-media.github.label'),
                 'title' => __('pages/project.text-media.github.title'),
+                'blank' => true
             ],
         ];
     }
