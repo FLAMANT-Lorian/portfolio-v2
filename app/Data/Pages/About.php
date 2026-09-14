@@ -57,4 +57,37 @@ class About
             ]
         ];
     }
+
+    public static function commitment(): array
+    {
+        $email = Options::mail();
+
+        return [
+            'title' => __('pages/about.commitment.title'),
+            'text' => __('pages/about.commitment.text'),
+            'button' => [
+                'label' => __('pages/about.commitment.button.label'),
+                'title' => $email['title'],
+                'route' => $email['route'],
+            ],
+            'list' => [
+                '1' => [
+                    'title' => __('pages/about.commitment.list.1.title'),
+                    'description' => __('pages/about.commitment.list.1.description'),
+                ],
+                '2' => [
+                    'title' => __('pages/about.commitment.list.2.title'),
+                    'description' => __('pages/about.commitment.list.2.description'),
+                ],
+                '3' => [
+                    'title' => __('pages/about.commitment.list.3.title'),
+                    'description' => __('pages/about.commitment.list.3.description'),
+                ],
+                '4' => [
+                    'title' => __('pages/about.commitment.list.4.title'),
+                    'description' => __('pages/about.commitment.list.4.description'),
+                ],
+            ]
+        ];
+    }
 }
