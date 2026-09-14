@@ -29,4 +29,17 @@ class Project
             ],
         ];
     }
+
+    public static function about(): array
+    {
+        return [
+            'title' => __('pages/project.about.title'),
+            'context' => [
+                'title' => __('pages/project.about.context.title'),
+            ],
+            'result' => [
+                'title' => __('pages/project.about.result.title'),
+            ]
+        ];
+    }
 }

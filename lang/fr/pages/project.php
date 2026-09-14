@@ -15,5 +15,14 @@ return [
             'label' => 'Voir sur GitHub',
             'title' => 'Voir sur GitHub',
         ],
-    ]
+    ],
+    'about' => [
+        'title' => 'À propos du projet',
+        'context' => [
+            'title' => 'Contexte',
+        ],
+        'result' => [
+            'title' => 'Résultat',
+        ]
+    ],
 ];

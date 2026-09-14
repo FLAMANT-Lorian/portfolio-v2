@@ -1,7 +1,3 @@
-@php
-    use App\Data\Pages\Project;
-@endphp
-
 @props([
     'base_info',
     'title',

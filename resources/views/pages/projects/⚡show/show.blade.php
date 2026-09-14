@@ -5,6 +5,8 @@
 
     $text_media = Project::text_media();
 
+    $about = Project::about();
+
     $project = $this->project;
 @endphp
 
@@ -30,5 +32,10 @@
         :button_2_link="$project->github_url"
     />
 
-    {{-- PROJECTS --}}
+    {{-- ABOUT --}}
+    <x-parts.block.project-about
+        :base_info="$about"
+        :context="$project->context"
+        :result="$project->result"
+    />
 </main>
