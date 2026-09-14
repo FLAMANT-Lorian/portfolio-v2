@@ -18,7 +18,7 @@
        aria-label="{{ __('partials/cards.view-project') . $project->name }}">
         <span class="sr-only">{{ __('partials/cards.view-project') . $project->name }}</span>
     </a>
-    <img class="absolute inset-0 group-hover:scale-105 group-focus-within:scale-105 ease-all"
+    <img class="absolute inset-0 group-hover:scale-105 group-focus-within:scale-105 ease-all object-cover w-full h-full"
          src="{{ asset($project->featured_image) }}"
          alt="{{ $project->featured_image_alt }}">
     <span aria-hidden="true"

@@ -1,3 +1,8 @@
 @utility ease-all {
     @apply transition-all ease-in-out duration-400;
 }
+
+@utility custom-shadow {
+    @apply shadow-[0px_8px_24px_rgba(149,157,165,0.2)];
+}
+

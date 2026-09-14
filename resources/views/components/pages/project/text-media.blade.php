@@ -34,7 +34,7 @@
             </div>
             <img src="{{ asset($image) }}"
                  alt="{{ $imageAlt }}"
-                 class="max-h-120 w-full object-cover aspect-square rg:aspect-1.5/1 lg:aspect-video col-span-full rg:col-span-4 rl:col-start-7 rl:col-span-6">
+                 class="custom-shadow max-h-120 w-full object-cover aspect-square object-center rg:aspect-1.5/1 lg:aspect-video col-span-full rg:col-span-4 rl:col-start-7 rl:col-span-6">
         </div>
     </div>
 </div>
