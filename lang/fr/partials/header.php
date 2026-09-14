@@ -26,6 +26,10 @@ return [
         'about' => [
             'label' => 'À propos',
             'title' => 'Vers la page à propos'
+        ],
+        'legals' => [
+            'label' => 'Mentions légales',
+            'title' => 'Vers la page mentions légales'
         ]
     ],
 ];

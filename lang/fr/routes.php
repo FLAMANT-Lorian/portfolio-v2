@@ -7,4 +7,5 @@ return [
         'show' => 'projets/{project}',
     ],
     'about' => 'a-propos',
+    'legals' => 'mentions-legales',
 ];

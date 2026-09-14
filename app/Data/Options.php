@@ -104,7 +104,7 @@ class Options
         return [
             'label' => __('partials/footer.legals.label'),
             'title' => __('partials/footer.legals.title'),
-            'route' => '#'
+            'route' => route('legals')
         ];
     }
 }

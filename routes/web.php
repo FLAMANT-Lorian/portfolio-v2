@@ -20,4 +20,7 @@ Route::group(
 
     Route::livewire(LaravelLocalization::transRoute('routes.about'), 'pages::about')
         ->name('about');
+
+    Route::livewire(LaravelLocalization::transRoute('routes.legals'), 'pages::legals')
+        ->name('legals');
 });
