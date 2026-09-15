@@ -9,8 +9,16 @@
 <main id="main">
     {{-- HERO --}}
     <div class="screen-width px-default pt-default pb-14 rl:pb-24">
-        <h1 class="text-h1 text-black font-semibold pb-3">{{ $hero['title'] }}</h1>
-        <p class="text-p text-gray-dark">{{ $hero['text'] }}</p>
+        <h1 data-reveal
+            data-dir="right"
+            data-delay="0.2"
+            class="text-h1 text-black font-semibold pb-3">
+            {{ $hero['title'] }}
+        </h1>
+        <p data-reveal
+           data-dir="top"
+           data-delay="0.3"
+           class="text-p text-gray-dark">{{ $hero['text'] }}</p>
     </div>
 
     {{-- CONTENT --}}

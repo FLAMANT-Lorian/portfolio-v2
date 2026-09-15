@@ -6,10 +6,23 @@
 <div class="projects-hero" x-data="{ sidebarOpen: false }">
     <div class="screen-width px-default py-default pb-14 grid-default gap-y-8">
         <div class="flex flex-col gap-2 col-span-full">
-            <h1 class="text-h1 text-black font-semibold">{{ $hero['title'] }}</h1>
-            <p class="text-p text-gray-dark font-normal">{!! $hero['text'] !!}</p>
+            <h1 data-reveal
+                data-dir="right"
+                data-delay="0.1"
+                class="text-h1 text-black font-semibold">
+                {{ $hero['title'] }}
+            </h1>
+            <p data-reveal
+               data-dir="top"
+               data-delay="0.2"
+               class="text-p text-gray-dark font-normal">
+                {!! $hero['text'] !!}
+            </p>
         </div>
-        <div class="flex flex-col md:flex-row gap-4 col-span-full">
+        <div data-reveal
+             data-dir="top"
+             data-delay="0.3"
+             class="flex flex-col md:flex-row gap-4 col-span-full">
             <div class="search-input md:grow">
                 <label class="sr-only" for="search">{{ $hero['fields']['search']['label'] }}</label>
                 <input type="text"

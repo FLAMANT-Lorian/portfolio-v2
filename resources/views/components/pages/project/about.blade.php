@@ -6,9 +6,15 @@
 
 <section class="project-about bg-beige">
     <div class="screen-width grid-default px-default py-default gap-y-8 rl:gap-y-10">
-        <h2 class="text-h2 text-center font-medium text-black col-span-full">{{ $base_info['title'] }}</h2>
+        <h2 data-reveal
+            data-dir="top"
+            class="text-h2 text-center font-medium text-black col-span-full">
+            {{ $base_info['title'] }}
+        </h2>
         <div class="flex flex-col md:flex-row md:justify-between rl:grid-default gap-10 col-span-full">
             <x-parts.projects.title-and-p
+                data-reveal
+                data-dir="right"
                 class="rl:col-start-2 rl:col-span-4 md:col-span-1"
                 :title="$base_info['context']['title']"
                 :text="$context"
@@ -20,6 +26,9 @@
                 </svg>
             </span>
             <x-parts.projects.title-and-p
+                data-reveal
+                data-dir="right"
+                data-delay="0.2"
                 class="rl:col-start-8 rl:col-span-4 md:col-span-1"
                 :title="$base_info['result']['title']"
                 :text="$result"

@@ -10,18 +10,28 @@
 
 <div class="project-hero">
     <div class="screen-width grid-default px-default pb-default pt-10 gap-8 rl:gap-14 lg:gap-24">
-        <h1 class="text-h1 font-semibold col-span-full text-black">{{ $title }}</h1>
+        <h1 data-reveal
+            data-dir="right"
+            data-delay="0.1"
+            class="text-h1 font-semibold col-span-full text-black">
+            {{ $title }}
+        </h1>
         <div class="grid-default max-rg:gap-y-14 col-span-full">
-            <div class="flex flex-col col-span-full rg:col-span-4 rl:col-span-5">
+            <div data-reveal
+                 data-dir="right"
+                 data-delay="0.2"
+                 class="flex flex-col col-span-full rg:col-span-4 rl:col-span-5">
                 <h2 class="text-h2 font-medium text-black pb-2 rg:pb-3">{{ $base_info['title'] }}</h2>
                 <p class="text-p text-gray-dark">{{ $description }}</p>
                 <div class="flex flex-row gap-6 mt-8">
-                    <x-parts.buttons.filled-btn
-                        class="max-md:grow max-md:justify-center"
-                        :label="$base_info['btn-1']['label']"
-                        :title="$base_info['btn-1']['title']"
-                        :route="$button_1_link"
-                        :blank="$base_info['btn-1']['blank']"/>
+                    @if($button_1_link)
+                        <x-parts.buttons.filled-btn
+                            class="max-md:grow max-md:justify-center"
+                            :label="$base_info['btn-1']['label']"
+                            :title="$base_info['btn-1']['title']"
+                            :route="$button_1_link"
+                            :blank="$base_info['btn-1']['blank']"/>
+                    @endif
 
                     <x-parts.buttons.outlined-btn
                         class="max-md:grow max-md:justify-center"
@@ -32,7 +42,10 @@
                         :arrow="false"/>
                 </div>
             </div>
-            <img srcset="
+            <img data-reveal
+                 data-dir="left"
+                 data-delay="0.3"
+                 srcset="
                 @foreach(config('images.text-media-sizes') as $size)
                     {{ asset('assets/img/projects/' . $size . '/' . $image) }} {{ $size }}w{{ !$loop->last ? ', ' : '' }}
                 @endforeach

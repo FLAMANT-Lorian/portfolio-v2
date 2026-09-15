@@ -4,10 +4,16 @@
 
 <section class="bg-beige">
     <div class="screen-width px-default py-default grid-default gap-y-10">
-        <h2 class="text-h2 text-black font-medium col-span-full text-center">{{ $content['title'] }}</h2>
+        <h2 data-reveal
+            data-dir="top"
+            class="text-h2 text-black font-medium col-span-full text-center">
+            {{ $content['title'] }}
+        </h2>
         <ul class="flex flex-col-reverse col-span-full">
             @foreach($content['steps'] as $index => $step)
-                <li class="flex flex-col md:flex-row justify-between md:items-center gap-4 md:gap-8 first:pb-0 last:pt-0 py-6 md:py-8 border-t border-red/50 last:border-none">
+                <li data-reveal
+                    data-dir="top"
+                    class="flex flex-col md:flex-row justify-between md:items-center gap-4 md:gap-8 first:pb-0 last:pt-0 py-6 md:py-8 border-t border-red/50 last:border-none">
                     <div class="flex flex-col gap-3">
                         <div class="flex flex-row items-center gap-6 rg:gap-8">
                             <div class="flex flex-row items-center gap-2">

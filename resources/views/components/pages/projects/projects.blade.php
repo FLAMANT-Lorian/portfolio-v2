@@ -13,9 +13,18 @@
         </h2>
         @if($projects->isNotEmpty())
             <div class="grid grid-cols-1 md:grid-cols-2 rg:grid-cols-3 gap-6 col-span-full">
+                @php
+                    $delay = 0.2;
+                @endphp
                 @foreach($projects as $project)
                     <x-parts.projects.card
+                        data-reveal
+                        data-dir="top"
+                        data-delay="{{ $delay }}"
                         :project="$project"/>
+                    @php
+                        $delay += 0.1;
+                    @endphp
                 @endforeach
             </div>
             {{ $this->projects->links(data: ['scrollTo' => 'main']) }}
@@ -31,7 +40,9 @@
             </div>
         @endif
         @if(!$projects->hasMorePages())
-            <p class="col-span-full text-center text-p text-gray-dark font-normal pt-8 rg:pt-12">
+            <p data-reveal
+               data-dir="top"
+               class="col-span-full text-center text-p text-gray-dark font-normal pt-8 rg:pt-12">
                 {!! __('pages/projects.more-projects') !!}
             </p>
         @endif

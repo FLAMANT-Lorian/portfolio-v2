@@ -3,6 +3,9 @@
         closeLangSwitcherLabel: {{ json_encode(__("partials/header.close-lang-switcher-menu-label")) }},
         openLangSwitcherLabel: {{ json_encode(__("partials/header.open-lang-switcher-menu-label")) }},
      }"
+     data-reveal
+     data-dir="top"
+     data-delay="0.3"
      class="relative z-20">
     <button type="button"
             @click="open = !open"

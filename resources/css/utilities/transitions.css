@@ -6,3 +6,10 @@
     @apply shadow-[0px_8px_24px_rgba(149,157,165,0.2)];
 }
 
+[data-text-reveal], [data-img-reveal] {
+    @apply overflow-hidden;
+}
+
+.mask-content {
+    @apply inline-block;
+}

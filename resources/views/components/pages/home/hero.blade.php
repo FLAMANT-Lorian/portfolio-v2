@@ -5,11 +5,22 @@
 @endphp
 <div class="home-hero">
     <div class="screen-width px-default py-default grid-default">
-        <h1 class="text-extra-big font-bold text-black md:col-span-8 md:mb-16 rl:mb-0 rl:col-span-9 rl:row-start-2">{{ $hero['title'] }}</h1>
+        <h1 data-reveal data-dir="right" data-delay="0.3"
+            class="text-extra-big font-bold text-black md:col-span-8 md:mb-16 rl:mb-0 rl:col-span-9 rl:row-start-2">
+            {{ $hero['title'] }}
+        </h1>
         <div
             class="flex flex-col gap-2 max-md:mt-8 max-md:mb-6 md:col-span-4 rl:row-start-1 rl:col-start-2 rl:col-span-5 lg:col-span-4 lg:col-start-2">
-            <h2 class="text-h2 text-black font-medium">{{ $hero['subtitle'] }}</h2>
-            <p class="text-p text-gray-dark">{{ $hero['text'] }}</p>
+            <h2 class="text-h2 text-black font-medium"
+                data-reveal
+                data-dir="top"
+                data-delay="0.4">{{ $hero['subtitle'] }}</h2>
+            <p class="text-p text-gray-dark"
+               data-reveal
+               data-dir="right"
+               data-delay="0.5">
+                {{ $hero['text'] }}
+            </p>
         </div>
         <x-parts.buttons.filled-btn
             class="justify-self-start md:col-span-4 md:self-end rl:row-start-2 rl:col-start-10 rl:col-span-3 rl:self-start rl:justify-self-end rl:mt-10"
@@ -18,7 +29,9 @@
             :route="$hero['button']['route']"
             :blank="$hero['button']['blank'] ?? false"
         />
-        <img srcset="
+        <img data-reveal
+             data-dir="left"
+             srcset="
              @foreach(config('images.hero-sizes') as $size)
                 {{ asset('assets/img/hero/' . $size . '/' . $hero['img']['src']) }} {{ $size }}w{{ !$loop->last ? ', ' : '' }}
              @endforeach
