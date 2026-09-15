@@ -13,7 +13,7 @@ class Home
             'button' => [
                 'label' => __('pages/home.hero.button.label'),
                 'title' => __('pages/home.hero.button.title'),
-                'route' => '#',
+                'route' => route('about'),
             ],
             'img' => [
                 'src' => 'photo-lorian.webp',

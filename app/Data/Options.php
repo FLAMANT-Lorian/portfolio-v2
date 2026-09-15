@@ -13,19 +13,19 @@ class Options
             [
                 'label' => __('options.socials.instagram.label'),
                 'title' => __('options.socials.instagram.title'),
-                'route' => '#',
+                'route' => 'https://www.instagram.com/lorianflamant/',
                 'icon' => 'instagram'
             ],
             [
                 'label' => __('options.socials.github.label'),
                 'title' => __('options.socials.github.title'),
-                'route' => '#',
+                'route' => 'https://github.com/FLAMANT-Lorian',
                 'icon' => 'github'
             ],
             [
                 'label' => __('options.socials.linkedin.label'),
                 'title' => __('options.socials.linkedin.title'),
-                'route' => '#',
+                'route' => 'https://www.linkedin.com/in/lorian-flamant/',
                 'icon' => 'linkedin'
             ],
         ];
