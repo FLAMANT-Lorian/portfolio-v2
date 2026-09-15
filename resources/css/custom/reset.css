@@ -1,0 +1,26 @@
+::selection {
+    @apply bg-red/20 text-black;
+}
+
+::-moz-selection {
+    @apply bg-red/20 text-black;
+}
+
+.legals {
+    h3 {
+        @apply text-h2 text-black font-medium mb-3;
+    }
+
+    ul {
+        @apply flex flex-col;
+    }
+
+    a {
+        @apply text-p text-red hover:font-semibold ease-all;
+    }
+
+
+    p, span {
+        @apply text-p text-gray-dark;
+    }
+}

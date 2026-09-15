@@ -1,0 +1,23 @@
+@utility screen-width {
+    @apply mx-auto max-w-400;
+}
+
+@utility px-default {
+    @apply px-6 md:px-12 rg:px-18 rl:px-24 xg:px-36;
+}
+
+@utility py-default {
+    @apply py-18 rl:py-30;
+}
+
+@utility pb-default {
+    @apply pb-18 rl:pb-30;
+}
+
+@utility pt-default {
+    @apply pt-18 rl:pt-30;
+}
+
+@utility errors-page {
+    @apply pt-30 pb-40 rl:pt-40 rl:pb-60;
+}

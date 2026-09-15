@@ -1,0 +1,33 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration {
+    public function up(): void
+    {
+        Schema::create('projects', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('slug');
+            $table->json('excerpt');
+            $table->string('featured_image');
+            $table->json('featured_image_alt');
+            $table->string('hero_image');
+            $table->json('hero_image_alt');
+            $table->json('description');
+            $table->text('website_url')->nullable();
+            $table->text('github_url');
+            $table->json('context');
+            $table->json('result');
+            $table->json('images');
+            $table->timestamps();
+        });
+    }
+
+    public function down(): void
+    {
+        Schema::dropIfExists('projects');
+    }
+};

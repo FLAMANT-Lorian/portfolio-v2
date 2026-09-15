@@ -1,0 +1,8 @@
+.search-input {
+    @apply relative;
+
+    &::before {
+        content: url('../../img/svg/search.svg');
+        @apply absolute left-3 top-1/2 -translate-y-1/2 leading-0;
+    }
+}

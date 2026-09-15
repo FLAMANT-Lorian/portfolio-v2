@@ -1,0 +1,26 @@
+@theme {
+    /* Font-family */
+    --font-family-clash-display: 'clash-display', sans-serif;
+    --font-family-dm-sans: 'dm-sans', sans-serif;
+
+    /* Colors */
+    --color-red: #D02B27;
+    --color-white: #FBFCFA;
+    --color-black: #100C08;
+    --color-gray-dark: #5B5959;
+    --color-gray-light: #E1E1E1;
+    --color-beige: #F1EDE7;
+
+
+    /* BREAKPOINTS */
+    --breakpoint-sm: 460px;
+    --breakpoint-md: 768px;
+    --breakpoint-rg: 1024px;
+    --breakpoint-rl: 1240px;
+    --breakpoint-lg: 1440px;
+    --breakpoint-xg: 1620px;
+    --breakpoint-xl: 1920px;
+    --breakpoint-xxl: 2080px;
+    --breakpoint-2xl: 2300px;
+    --breakpoint-2k: 2000px;
+}

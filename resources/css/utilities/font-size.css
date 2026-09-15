@@ -1,0 +1,29 @@
+@utility extra-point {
+    @apply after:content-['.'] after:text-red;
+}
+
+@utility text-extra-big {
+    font-size: clamp(3.5rem, 9.5vw, 11.25rem);
+    line-height: clamp(3.75rem, 7.5vw, 10rem);
+    @apply tracking-[1%] uppercase font-family-clash-display extra-point;
+}
+
+@utility text-h1 {
+    @apply text-5xl md:text-6xl rg:text-7xl rl:text-8xl lg:text-[6.25rem] leading-14 md:leading-16 rg:leading-20 rl:leading-24 lg:leading-27.5 tracking-[1%] font-family-clash-display extra-point;
+}
+
+@utility text-h2 {
+    @apply text-[2rem] rl:text-[2.5rem] leading-9.5 rl:leading-11.5 tracking-[2%] font-family-clash-display;
+}
+
+@utility text-h3 {
+    @apply text-2xl rl:text-[1.75rem] leading-7.5 rl:leading-8.5 tracking-[2%] font-family-clash-display;
+}
+
+@utility text-h4 {
+    @apply text-xl rl:text-2xl leading-6.5 rl:leading-6.5 tracking-[2%] font-family-clash-display;
+}
+
+@utility text-p {
+    @apply text-base leading-6 md:text-lg md:leading-6.5 font-normal font-family-dm-sans;
+}

@@ -1,0 +1,12 @@
+@utility btn {
+    @apply text-p px-3 md:px-4 py-2.5 md:py-3 flex flex-row gap-3 items-center ease-all;
+}
+
+@utility btn-filled {
+    @apply btn bg-red text-white border border-red hover:bg-transparent hover:text-red focus:bg-transparent focus:text-red;
+}
+
+@utility btn-outlined {
+    @apply btn text-black  border border-red bg-transparent hover:bg-red hover:text-white focus:text-white focus:bg-red focus:text-red;
+}
+
