@@ -12,7 +12,7 @@ return [
             'label' => 'Découvrir mes projets',
             'title' => 'Découvrir mes projets',
         ],
-        'image_alt' => ''
+        'image_alt' => 'Photographie de mon bureau'
     ],
     'career' => [
         'title' => 'Mon parcours',

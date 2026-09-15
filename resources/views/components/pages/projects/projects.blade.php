@@ -28,6 +28,13 @@
                 @endforeach
             </div>
             {{ $this->projects->links(data: ['scrollTo' => 'main']) }}
+            @if(!$projects->hasMorePages())
+                <p data-reveal
+                   data-dir="top"
+                   class="col-span-full text-center text-p text-gray-dark font-normal pt-8 rg:pt-12">
+                    {!! __('pages/projects.more-projects') !!}
+                </p>
+            @endif
         @else
             <div class="col-span-full py-8 md:py-12 rl:py-18 flex flex-col items-center justify-center gap-4">
                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -38,13 +45,6 @@
                     {!! __('pages/projects.no-result') !!}
                 </p>
             </div>
-        @endif
-        @if(!$projects->hasMorePages())
-            <p data-reveal
-               data-dir="top"
-               class="col-span-full text-center text-p text-gray-dark font-normal pt-8 rg:pt-12">
-                {!! __('pages/projects.more-projects') !!}
-            </p>
         @endif
     </div>
 </section>
