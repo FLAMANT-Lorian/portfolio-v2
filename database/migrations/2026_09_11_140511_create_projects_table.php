@@ -17,7 +17,7 @@ return new class extends Migration {
             $table->string('hero_image');
             $table->json('hero_image_alt');
             $table->json('description');
-            $table->text('website_url');
+            $table->text('website_url')->nullable();
             $table->text('github_url');
             $table->json('context');
             $table->json('result');

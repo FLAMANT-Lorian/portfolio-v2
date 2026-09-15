@@ -19,5 +19,11 @@ class ProjectSeeder extends Seeder
 
         $project1Tags = [$website];
         Project::create(Projects::lvm())->tags()->attach($project1Tags);
+
+        $project2Tags = [$website, $web_application];
+        Project::create(Projects::refuge())->tags()->attach($project2Tags);
+
+        $project3Tags = [$website, $web_application];
+        Project::create(Projects::pfe())->tags()->attach($project3Tags);
     }
 }

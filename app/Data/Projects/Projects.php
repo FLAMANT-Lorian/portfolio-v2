@@ -62,4 +62,120 @@ class Projects
             ],
         ];
     }
+
+    public static function refuge(): array
+    {
+        return [
+            'name' => 'Refuge animalier',
+            'slug' => 'refuge-animalier',
+            'excerpt' => [
+                'fr' => 'Site et application d’un refuge animalier',
+                'en' => 'Website and application of an animal shelter'
+            ],
+            'featured_image' => 'refuge-card.webp',
+            'featured_image_alt' => [
+                'fr' => 'Présentation du site de présentation du refuge sur un ordinateur',
+                'en' => 'Introduction to the animal shelter website on a computer'
+            ],
+            'hero_image' => 'refuge-hero.webp',
+            'hero_image_alt' => [
+                'fr' => 'Présentation du site de présentation du refuge sur un ordinateur',
+                'en' => 'Introduction to the animal shelter website on a computer'
+            ],
+            'description' => [
+                'fr' => 'Un refuge animalier est une structure qui accueille, soigne et prend en charge des animaux abandonnés, maltraités ou trouvés, en attendant de leur trouver une famille d’adoption. Ce refuge propose un site vitrine ainsi qu’une application permettant de présenter les animaux disponibles à l’adoption et de faciliter la gestion du refuge au quotidien.',
+                'en' => 'An animal shelter is a facility that takes in, cares for, and looks after abandoned, mistreated, or stray animals while they wait to be adopted by a new family. This shelter offers a showcase website as well as an application to present the animals available for adoption and to facilitate the shelter’s day-to-day management.'
+            ],
+            'github_url' => 'https://github.com/FLAMANT-Lorian/refuge-animalier',
+            'context' => [
+                'fr' => 'Ce projet a été réalisé dans le cadre du cours de projet web. Il avait pour but de se familiariser avec Laravel, un framework PHP permettant de créer des applications web complexes très facilement.',
+                'en' => 'This project was carried out as part of the web project course. Its goal was to familiarize myself with Laravel, a PHP framework that allows you to create complex web applications very easily.'
+            ],
+            'result' => [
+                'fr' => 'Grâce aux différents tests effectués, ainsi qu’aux longues heures de recherches dans la documentation de Laravel, j’ai pu créer une application qui répondait aux besoins de notre client fictif. Cette application sert à gérer les différents animaux, ainsi que leurs potentielles demandes d’adoption.',
+                'en' => 'Thanks to the various tests carried out, as well as many long hours of research in the Laravel documentation, I was able to create an application that met the needs of our fictional client. This application is used to manage the shelter’s animals, as well as their potential adoption requests.'
+            ],
+            'images' => [
+                [
+                    'path' => 'refuge-1.webp',
+                    'alt' => [
+                        'fr' => 'Différents écrans du tableau de bord de l’administration du refuge',
+                        'en' => 'Different screens of the shelter’s admin dashboard'
+                    ]
+                ],
+                [
+                    'path' => 'refuge-2.webp',
+                    'alt' => [
+                        'fr' => 'Page de contact sur le site vitrine en version mobile et ordinateur',
+                        'en' => 'Contact page on the showcase website in mobile and desktop version'
+                    ]
+                ],
+                [
+                    'path' => 'refuge-3.webp',
+                    'alt' => [
+                        'fr' => 'Wireframe du tableau de bord de l’administration du refuge',
+                        'en' => 'Wireframe of the shelter’s admin dashboard'
+                    ]
+                ],
+            ],
+        ];
+    }
+
+    public static function pfe(): array
+    {
+        return [
+            'name' => 'ASBL Les Coccinelles',
+            'slug' => 'asbl-les-coccinelles',
+            'excerpt' => [
+                'fr' => 'Site et application de l’ASBL Les Coccinelles',
+                'en' => 'Website and application of ASBL Les Coccinelles'
+            ],
+            'featured_image' => 'pfe-card.webp',
+            'featured_image_alt' => [
+                'fr' => 'Présentation du site de présentation de l’ASBL sur un ordinateur',
+                'en' => 'Introduction to the ASBL website on a computer'
+            ],
+            'hero_image' => 'pfe-hero.webp',
+            'hero_image_alt' => [
+                'fr' => 'Présentation du site de présentation du refuge sur un téléphone',
+                'en' => 'Introduction to the animal shelter website on a phone'
+            ],
+            'description' => [
+                'fr' => 'L’ASBL Les Coccinelles est l’asbl de mon village. Elle organise durant l’année plusieurs événements afin de faire vivre notre petit village, mais aussi pour favoriser les rencontres avec les nouveaux arrivants.',
+                'en' => 'ASBL Les Coccinelles is the local non-profit organisation of my village. It organizes several events throughout the year to bring life to our small village, but also to encourage encounters with newcomers.'
+            ],
+            'github_url' => 'https://github.com/FLAMANT-Lorian/les-coccinelles-admin',
+            'context' => [
+                'fr' => 'Ce projet a été réalisé comme projet de fin d’études à la HEPL. Pour celui-ci, j’ai décidé de réaliser une application de gestion pour l’asbl, afin de lui faciliter la gestion des réservations de la salle, des événements, ainsi que l’organisation des futures réunions. Je leur ai également réalisé un site vitrine afin de promouvoir leur image.',
+                'en' => 'This project was carried out as my final-year project at HEPL. For this project, I decided to build a management application for the ASBL, to make it easier for them to manage room bookings, events, and the organisation of future meetings. I also created a showcase website for them to promote their image.'
+            ],
+            'result' => [
+                'fr' => 'Grâce à la bonne communication entre mon client et moi-même, j’ai pu comprendre le réel besoin de l’asbl, et ainsi leur fabriquer un outil efficace qui répond exactement à leur besoin.',
+                'en' => 'Thanks to the good communication between my client and myself, I was able to understand the real needs of the ASBL, and thus build them an efficient tool that meets their needs exactly.'
+            ],
+            'images' => [
+                [
+                    'path' => 'pfe-1.webp',
+                    'alt' => [
+                        'fr' => 'Différents écrans du tableau de bord de l’administration de l’ASBL',
+                        'en' => 'Different screens of the ASBL’s admin dashboard'
+                    ]
+                ],
+                [
+                    'path' => 'pfe-2.webp',
+                    'alt' => [
+                        'fr' => 'Wireframe du tableau de bord de l’administration de l’ASBL',
+                        'en' => 'Wireframe of the ASBL’s admin dashboard'
+                    ]
+                ],
+                [
+                    'path' => 'pfe-3.webp',
+                    'alt' => [
+                        'fr' => 'Page de présentation de l’historique de l’ASBL sur différentes tailles d’écrans',
+                        'en' => 'Presentation page of the ASBL’s history on different screen sizes'
+                    ]
+                ],
+            ],
+        ];
+    }
 }

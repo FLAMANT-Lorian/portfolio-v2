@@ -10,8 +10,8 @@
         : '';
 @endphp
 
-<div class="justify-self-center md:justify-self-end pt-8 col-span-full ">
-    @if ($paginator->hasPages())
+@if ($paginator->hasPages())
+    <div class="justify-self-center md:justify-self-end pt-8 col-span-full ">
         <div role="navigation" aria-label="{{ __('pages/projects.projects.pagination-title') }}"
              class="flex items-center justify-between">
             <span class="flex flex-row items-center gap-3">
@@ -102,5 +102,5 @@
                         </span>
                     </span>
         </div>
-    @endif
-</div>
+    </div>
+@endif

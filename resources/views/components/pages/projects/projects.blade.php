@@ -30,5 +30,10 @@
                 </p>
             </div>
         @endif
+        @if(!$projects->hasMorePages())
+            <p class="col-span-full text-center text-p text-gray-dark font-normal pt-8 rg:pt-12">
+                {!! __('pages/projects.more-projects') !!}
+            </p>
+        @endif
     </div>
 </section>

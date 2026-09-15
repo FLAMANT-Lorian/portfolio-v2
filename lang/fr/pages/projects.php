@@ -30,5 +30,6 @@ return [
         'title' => 'Liste des projets',
         'pagination-title' => 'Pagination des projets'
     ],
-    'no-result' => 'Aucun résultat ne correspond à votre recherche&nbsp;!'
+    'no-result' => 'Aucun résultat ne correspond à votre recherche&nbsp;!',
+    'more-projects' => 'Revenez bientôt pour découvrir d’autres projets&nbsp;!'
 ];
