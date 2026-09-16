@@ -14,7 +14,7 @@
             data-dir="right"
             data-delay="0.1"
             class="text-h1 font-semibold col-span-full text-black">
-            {{ $title }}
+            {{ $title }}&nbsp;<span class="text-red">.</span>
         </h1>
         <div class="grid-default max-rg:gap-y-14 col-span-full">
             <div data-reveal

@@ -13,7 +13,7 @@
                       data-dir="top"
                       data-delay="0.2"
                       class="text-extra-big font-semibold text-black pb-6">
-                    {{ $error['code'] }}
+                    {{ $error['code'] }}&nbsp;<span class="text-red">.</span>
                 </span>
                 <h1 data-reveal
                     data-dir="top"
