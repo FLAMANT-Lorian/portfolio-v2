@@ -29,9 +29,7 @@
             </div>
             {{ $this->projects->links(data: ['scrollTo' => 'main']) }}
             @if(!$projects->hasMorePages())
-                <p data-reveal
-                   data-dir="top"
-                   class="col-span-full text-center text-p text-gray-dark font-normal pt-8 rg:pt-12">
+                <p class="col-span-full text-center text-p text-gray-dark font-normal pt-8 rg:pt-12">
                     {!! __('pages/projects.more-projects') !!}
                 </p>
             @endif

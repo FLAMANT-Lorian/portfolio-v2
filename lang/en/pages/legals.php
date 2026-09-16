@@ -3,7 +3,7 @@
 return [
     'hero' => [
         'title' => 'Legal Notice',
-        'text' => 'Last updated on September 14, 2026'
+        'text' => 'Last updated : September 14, 2026'
     ],
     'title' => 'Legal notice content',
     'identity' => [
@@ -16,7 +16,7 @@ return [
             '2' => 'Registered office: 1227 Les Acacias (Geneva), Switzerland',
             '3' => 'For more information, visit the official website of',
             'link' => [
-                'label' => 'Infomaniak',
+                'label' => ' Infomaniak.',
                 'title' => 'Official website of Infomaniak',
             ]
         ]

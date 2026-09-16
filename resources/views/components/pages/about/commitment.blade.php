@@ -17,7 +17,7 @@
                 {{ $content['text'] }}
             </p>
             <x-parts.buttons.filled-btn
-                class="mt-8 justify-self-start"
+                class="mt-8 w-fit"
                 :label="$content['button']['label']"
                 :title="$content['button']['title']"
                 :route="$content['button']['route']"

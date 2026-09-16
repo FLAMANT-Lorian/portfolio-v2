@@ -7,7 +7,7 @@
     <div class="screen-width px-default py-default grid-default">
         <h1 data-reveal data-dir="right" data-delay="0.3"
             class="text-extra-big font-bold text-black md:col-span-8 md:mb-16 rl:mb-0 rl:col-span-9 rl:row-start-2">
-            {{ $hero['title'] }}
+            {{ $hero['title'] }}&nbsp;<span class="text-red">.</span>
         </h1>
         <div
             class="flex flex-col gap-2 max-md:mt-8 max-md:mb-6 md:col-span-4 rl:row-start-1 rl:col-start-2 rl:col-span-5 lg:col-span-4 lg:col-start-2">

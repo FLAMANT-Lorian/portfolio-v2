@@ -10,7 +10,7 @@
                 data-dir="right"
                 data-delay="0.1"
                 class="text-h1 text-black font-semibold">
-                {{ $hero['title'] }}
+                {{ $hero['title'] }}&nbsp;<span class="text-red">.</span>
             </h1>
             <p data-reveal
                data-dir="top"

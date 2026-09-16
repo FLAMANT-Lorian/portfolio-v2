@@ -14,7 +14,7 @@
             data-dir="right"
             data-delay="0.1"
             class="text-h1 font-semibold col-span-full text-black">
-            {{ $title }}
+            {{ $title }}&nbsp;<span class="text-red">.</span>
         </h1>
         <div class="grid-default max-rg:gap-y-14 col-span-full">
             <div data-reveal
@@ -31,15 +31,23 @@
                             :title="$base_info['btn-1']['title']"
                             :route="$button_1_link"
                             :blank="$base_info['btn-1']['blank']"/>
-                    @endif
 
-                    <x-parts.buttons.outlined-btn
-                        class="max-md:grow max-md:justify-center"
-                        :label="$base_info['btn-2']['label']"
-                        :title="$base_info['btn-2']['title']"
-                        :route="$button_2_link"
-                        :blank="$base_info['btn-2']['blank']"
-                        :arrow="false"/>
+                        <x-parts.buttons.outlined-btn
+                            class="max-md:grow max-md:justify-center"
+                            :label="$base_info['btn-2']['label']"
+                            :title="$base_info['btn-2']['title']"
+                            :route="$button_2_link"
+                            :blank="$base_info['btn-2']['blank']"
+                            :arrow="false"/>
+                    @else
+                        <x-parts.buttons.filled-btn
+                            class="max-md:grow max-md:justify-center"
+                            :label="$base_info['btn-2']['label']"
+                            :title="$base_info['btn-2']['title']"
+                            :route="$button_2_link"
+                            :blank="$base_info['btn-2']['blank']"
+                            :arrow="false"/>
+                    @endif
                 </div>
             </div>
             <img data-reveal

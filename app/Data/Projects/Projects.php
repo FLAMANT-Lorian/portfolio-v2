@@ -30,11 +30,11 @@ class Projects
             'website_url' => 'https://le-vieux-moulin.lorianflamant.com/',
             'github_url' => 'https://github.com/FLAMANT-Lorian/ASBL-Le-vieux-moulin-site',
             'context' => [
-                'fr' => 'Le fait que l’ASBL ne possédait pas encore de site internet était pour moi une des premières difficultés,car je ne connaissait pas du tout le terme SRG. J’ai donc fait des recherches afin de mieux comprendre les besoins de mon client avant de me lancer dans le projet.',
+                'fr' => 'Le fait que l’ASBL ne possédait pas encore de site internet était pour moi l’une des premières difficultés, car je ne connaissais pas du tout le terme SRG. J’ai donc fait des recherches afin de mieux comprendre les besoins de mon client avant de me lancer dans le projet.',
                 'en' => 'The lack of a website for the non-profit organisation Le Vieux Moulin was a challenge for me, as I was not familiar with the term SRG. So I did research to better understand the needs of my client before starting the project.'
             ],
             'result' => [
-                'fr' => 'Grâce aux différentes recherches effectuées, j’ai pu comprendre les besoins de mon client et créer un site internet qui correspondait à ses besoins. En essayant au maximum de rendre le site agréable pour les enfants, afin qu’ils se sentent en sécurité dans l’hébergement, mais aussi pour rassurer les parents de ceux-ci.',
+                'fr' => 'Grâce aux différentes recherches effectuées, j’ai pu comprendre les besoins de mon client et créer un site internet qui correspondait à ses besoins. J’ai essayé au maximum de rendre le site agréable pour les enfants, afin qu’ils se sentent en sécurité dans l’hébergement, mais aussi pour rassurer leurs parents.',
                 'en' => 'Thanks to the research I carried out, I was able to understand my client’s needs and create a website that matched them. I aimed to make the site as welcoming as possible for children, so they would feel safe within the facility, while also reassuring their parents.'
             ],
             'images' => [
@@ -92,7 +92,7 @@ class Projects
                 'en' => 'This project was carried out as part of the web project course. Its goal was to familiarize myself with Laravel, a PHP framework that allows you to create complex web applications very easily.'
             ],
             'result' => [
-                'fr' => 'Grâce aux différents tests effectués, ainsi qu’aux longues heures de recherches dans la documentation de Laravel, j’ai pu créer une application qui répondait aux besoins de notre client fictif. Cette application sert à gérer les différents animaux, ainsi que leurs potentielles demandes d’adoption.',
+                'fr' => 'Grâce aux différents tests effectués, ainsi qu’aux longues heures de recherche dans la documentation de Laravel, j’ai pu créer une application qui répondait aux besoins de notre client fictif. Cette application sert à gérer les différents animaux, ainsi que leurs potentielles demandes d’adoption.',
                 'en' => 'Thanks to the various tests carried out, as well as many long hours of research in the Laravel documentation, I was able to create an application that met the needs of our fictional client. This application is used to manage the shelter’s animals, as well as their potential adoption requests.'
             ],
             'images' => [
@@ -141,16 +141,16 @@ class Projects
                 'en' => 'Introduction to the animal shelter website on a phone'
             ],
             'description' => [
-                'fr' => 'L’ASBL Les Coccinelles est l’asbl de mon village. Elle organise durant l’année plusieurs événements afin de faire vivre notre petit village, mais aussi pour favoriser les rencontres avec les nouveaux arrivants.',
+                'fr' => 'L’ASBL Les Coccinelles est l’ASBL de mon village. Elle organise durant l’année plusieurs événements afin de faire vivre notre petit village, mais aussi pour favoriser les rencontres avec les nouveaux arrivants.',
                 'en' => 'ASBL Les Coccinelles is the local non-profit organisation of my village. It organizes several events throughout the year to bring life to our small village, but also to encourage encounters with newcomers.'
             ],
             'github_url' => 'https://github.com/FLAMANT-Lorian/les-coccinelles-admin',
             'context' => [
-                'fr' => 'Ce projet a été réalisé comme projet de fin d’études à la HEPL. Pour celui-ci, j’ai décidé de réaliser une application de gestion pour l’asbl, afin de lui faciliter la gestion des réservations de la salle, des événements, ainsi que l’organisation des futures réunions. Je leur ai également réalisé un site vitrine afin de promouvoir leur image.',
+                'fr' => 'Ce projet a été réalisé comme projet de fin d’études à la HEPL. Pour celui-ci, j’ai décidé de réaliser une application de gestion pour l’ASBL, afin de lui faciliter la gestion des réservations de la salle, des événements, ainsi que l’organisation des futures réunions. Je leur ai également réalisé un site vitrine afin de promouvoir leur image.',
                 'en' => 'This project was carried out as my final-year project at HEPL. For this project, I decided to build a management application for the ASBL, to make it easier for them to manage room bookings, events, and the organisation of future meetings. I also created a showcase website for them to promote their image.'
             ],
             'result' => [
-                'fr' => 'Grâce à la bonne communication entre mon client et moi-même, j’ai pu comprendre le réel besoin de l’asbl, et ainsi leur fabriquer un outil efficace qui répond exactement à leur besoin.',
+                'fr' => 'Grâce à la bonne communication entre mon client et moi-même, j’ai pu comprendre les réels besoins de l’ASBL et ainsi lui fabriquer un outil efficace qui répond exactement à ses besoins.',
                 'en' => 'Thanks to the good communication between my client and myself, I was able to understand the real needs of the ASBL, and thus build them an efficient tool that meets their needs exactly.'
             ],
             'images' => [

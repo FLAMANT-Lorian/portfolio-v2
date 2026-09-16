@@ -20,7 +20,7 @@
          @click.away="sidebarOpen = false"
          @keydown.window.escape="sidebarOpen = false"
          x-effect="document.body.classList.toggle('overflow-hidden', sidebarOpen)"
-         class="fixed z-30 w-screen sm:w-100 h-screen bg-white max-sm:inset-0 sm:right-0 sm:top-0 sm:bottom-0 ease-all flex flex-col">
+         class="fixed z-30 w-screen sm:w-100 bg-white max-sm:inset-0 sm:right-0 sm:top-0 sm:bottom-0 ease-all flex flex-col">
         <div class="flex flex-row items-center justify-between border-b border-b-gray-light px-6 py-8">
             <span class="text-h4 text-black font-semibold">
                 {{ __('pages/projects.filter.title') }}

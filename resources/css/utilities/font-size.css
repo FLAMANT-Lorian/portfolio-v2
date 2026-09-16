@@ -1,15 +1,11 @@
-@utility extra-point {
-    @apply after:content-['.'] after:text-red;
-}
-
 @utility text-extra-big {
     font-size: clamp(3.5rem, 9.5vw, 11.25rem);
     line-height: clamp(3.75rem, 7.5vw, 10rem);
-    @apply tracking-[1%] uppercase font-family-clash-display extra-point;
+    @apply tracking-[1%] uppercase font-family-clash-display;
 }
 
 @utility text-h1 {
-    @apply text-5xl md:text-6xl rg:text-7xl rl:text-8xl lg:text-[6.25rem] leading-14 md:leading-16 rg:leading-20 rl:leading-24 lg:leading-27.5 tracking-[1%] font-family-clash-display extra-point;
+    @apply text-5xl md:text-6xl rg:text-7xl rl:text-8xl lg:text-[6.25rem] leading-14 md:leading-16 rg:leading-20 rl:leading-24 lg:leading-27.5 tracking-[1%] font-family-clash-display;
 }
 
 @utility text-h2 {
