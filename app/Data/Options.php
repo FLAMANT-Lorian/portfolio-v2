@@ -73,6 +73,15 @@ class Options
         ];
     }
 
+    public static function cv(): array
+    {
+        return [
+            'label' => __('partials/footer.cv.label'),
+            'title' => __('partials/footer.cv.title'),
+            'route' => 'assets/pdfs/cv-flamant-lorian.pdf'
+        ];
+    }
+
     public static function resources(): array
     {
         return [

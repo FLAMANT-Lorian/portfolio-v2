@@ -13,5 +13,9 @@ return [
     'legals' => [
         'label' => 'Mentions légales',
         'title' => 'Vers la page des mentions légales',
-    ]
+    ],
+    'cv' => [
+        'label' => 'Télécharger mon CV',
+        'title' => 'Télécherger mon CV',
+    ],
 ];

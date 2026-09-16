@@ -14,4 +14,8 @@ return [
         'label' => 'Legal notice',
         'title' => 'Go to the legal notice page',
     ],
+    'cv' => [
+        'label' => 'Download my CV',
+        'title' => 'Download my CV',
+    ],
 ];
