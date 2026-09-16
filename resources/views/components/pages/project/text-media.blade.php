@@ -31,15 +31,23 @@
                             :title="$base_info['btn-1']['title']"
                             :route="$button_1_link"
                             :blank="$base_info['btn-1']['blank']"/>
-                    @endif
 
-                    <x-parts.buttons.outlined-btn
-                        class="max-md:grow max-md:justify-center"
-                        :label="$base_info['btn-2']['label']"
-                        :title="$base_info['btn-2']['title']"
-                        :route="$button_2_link"
-                        :blank="$base_info['btn-2']['blank']"
-                        :arrow="false"/>
+                        <x-parts.buttons.outlined-btn
+                            class="max-md:grow max-md:justify-center"
+                            :label="$base_info['btn-2']['label']"
+                            :title="$base_info['btn-2']['title']"
+                            :route="$button_2_link"
+                            :blank="$base_info['btn-2']['blank']"
+                            :arrow="false"/>
+                    @else
+                        <x-parts.buttons.filled-btn
+                            class="max-md:grow max-md:justify-center"
+                            :label="$base_info['btn-2']['label']"
+                            :title="$base_info['btn-2']['title']"
+                            :route="$button_2_link"
+                            :blank="$base_info['btn-2']['blank']"
+                            :arrow="false"/>
+                    @endif
                 </div>
             </div>
             <img data-reveal
