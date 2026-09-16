@@ -5,9 +5,9 @@
         :title="$title"/>
 </head>
 <body class="bg-white">
-    @if(app()->environment('local'))
+    {{--@if(app()->environment('local'))
         <x-tools.breakpoints/>
-    @endif
+    @endif--}}
 
     <x-sprite/>
 
