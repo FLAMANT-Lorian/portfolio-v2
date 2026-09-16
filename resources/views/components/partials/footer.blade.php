@@ -4,6 +4,7 @@
     $navigation_links = Options::navigation();
     $phone = Options::phone();
     $mail = Options::mail();
+    $cv = Options::cv();
     $resources = Options::resources();
     $legals = Options::legals()
 @endphp
@@ -51,6 +52,15 @@
                        title="{{ $mail['title'] }}"
                        href="{{ $mail['route'] }}">
                         {{ $mail['label'] }}
+                    </a>
+                </li>
+                <li>
+                    <a class="hover:font-semibold focus:font-semibold text-p text-white ease-all flex flex-row gap-2 items-center before:content-[''] before:block before:w-0 before:h-0 before:bg-white"
+                       aria-label="{{ $cv['label'] }}"
+                       title="{{ $cv['title'] }}"
+                       download
+                       href="{{ asset($cv['route']) }}">
+                        {{ $cv['label'] }}
                     </a>
                 </li>
             </ul>
