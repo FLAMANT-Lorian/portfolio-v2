@@ -3,7 +3,7 @@
 return [
     'hero' => [
         'title' => 'Mentions légales',
-        'text' => 'Dernière mise à jour le 14 septembre 2026'
+        'text' => 'Dernière mise à jour : 14 septembre 2026'
     ],
     'title' => 'Contenu des mentions légales',
     'identity' => [
@@ -16,7 +16,7 @@ return [
             '2' => 'Siège social : 1227 Les Acacias (Genève), Suisse',
             '3' => 'Pour plus d’informations, consultez le site officiel d’',
             'link' => [
-                'label' => 'Infomaniak',
+                'label' => 'Infomaniak.',
                 'title' => 'Site officiel d’Infomaniak',
             ]
         ]
@@ -31,7 +31,7 @@ return [
     ],
     'personal_data' => [
         'title' => 'Données personnelles',
-        'content' => 'Lors de votre navigation, des données personnelles peuvent être collectées via les formulaires de contact. Elles sont utilisées uniquement pour répondre à vos demandes et conservées pour une durée indéterminée. Ces informations sont traitées de façon confidentielle, sécurisée, et ne sont jamais cédées à des tiers, sauf obligation légale ou partenaire technique indispensable. Conformément au RGPD, vous pouvez exercer vos droits d’accès, rectification, effacement en me contactant à l’adresse suivante :',
+        'content' => 'Lors de votre navigation, des données personnelles peuvent être collectées via les formulaires de contact. Elles sont utilisées uniquement pour répondre à vos demandes et conservées pour une durée indéterminée. Ces informations sont traitées de façon confidentielle et sécurisée et ne sont jamais cédées à des tiers, sauf obligation légale ou lorsqu’un partenaire technique est indispensable. Conformément au RGPD, vous pouvez exercer vos droits d’accès, de rectification et d’effacement en me contactant à l’adresse suivante :',
     ],
 
 ];

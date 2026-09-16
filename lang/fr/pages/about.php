@@ -4,7 +4,7 @@ return [
     'text-media' => [
         'title' => 'À propos de moi',
         'title-2' => 'Qui suis-je&nbsp;?',
-        'description' => 'Je m’appelle Lorian Flamant, je suis diplômé d’un bachelier en Infographie orientation Web/Multimédia proposé par la Haute École de la Province de Liège. Je suis motivé à apprendre de nouvelles choses. De plus, j’essaye de rester à jour en ce qui concerne les nouvelles technologies et de les appliquer dans mes projets lorsque je les trouve intéressantes.',
+        'description' => 'Je m’appelle Lorian Flamant, je suis diplômé d’un bachelier en Infographie, orientation Web/Multimédia, proposé par la Haute École de la Province de Liège. Je suis motivé à apprendre de nouvelles choses. De plus, j’essaye de rester à jour concernant les nouvelles technologies et de les appliquer dans mes projets lorsque je les trouve intéressantes.',
         'btn-1' => [
             'label' => 'Me contacter',
         ],
@@ -37,7 +37,7 @@ return [
     ],
     'commitment' => [
         'title' => 'Mes engagements',
-        'text' => 'Durant mes trois années de formation à la HEPL, j’ai eu l’opportunité de me familiariser avec les principes de la qualité Web, des outils précieux lors de la réalisation de projets.',
+        'text' => 'Durant mes trois années de formation à la HEPL, j’ai eu l’opportunité de me familiariser avec les principes de la qualité Web, des outils précieux pour la réalisation de projets.',
         'button' => [
             'label' => 'Me contacter'
         ],
@@ -48,15 +48,15 @@ return [
             ],
             '2' => [
                 'title' => 'Respect des bonnes pratiques',
-                'description' => 'Je veille à ce que le code de votre site soit le plus propre possible tout en respectant les nouvelles pratiques associé à l’univers du web.',
+                'description' => 'Je veille à ce que le code de votre site soit le plus propre possible tout en respectant les nouvelles pratiques associées à l’univers du Web.',
             ],
             '3' => [
                 'title' => 'Respect des normes d’accessibilité',
-                'description' => 'L’accessibilité est un point très important dans une site internet pour garantir aux personnes en situation de handicap d’utiliser votre site sans difficulté.',
+                'description' => 'L’accessibilité est un point très important dans un site internet pour garantir aux personnes en situation de handicap la possibilité d’utiliser votre site sans difficulté.',
             ],
             '4' => [
                 'title' => 'Respect des conventions du design',
-                'description' => 'Mon objectif est de garantir un design cohérent, avec des informations claires et compréhensibles, tout en respectant les standards du web.',
+                'description' => 'Mon objectif est de garantir un design cohérent, avec des informations claires et compréhensibles, tout en respectant les standards du Web.',
             ],
         ],
     ],
