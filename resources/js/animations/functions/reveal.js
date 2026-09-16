@@ -8,11 +8,11 @@ export function hideRevealItems(items) {
         const dir = item.dataset.dir;
 
         if (dir === 'top') {
-            gsap.set(item, { opacity: 0, y: '30px' });
+            gsap.set(item, {opacity: 0, y: '30px'});
         } else if (dir === 'left') {
-            gsap.set(item, { opacity: 0, x: '30px' });
+            gsap.set(item, {opacity: 0, x: '30px'});
         } else if (dir === 'right') {
-            gsap.set(item, { opacity: 0, x: '-30px' });
+            gsap.set(item, {opacity: 0, x: '-30px'});
         }
     });
 }
@@ -47,7 +47,7 @@ export function reveal(items, params) {
 
         const st = ScrollTrigger.create({
             trigger: item,
-            start: 'top 75%',
+            start: 'top 80%',
             onEnter: () => tl.play(),
         })
 

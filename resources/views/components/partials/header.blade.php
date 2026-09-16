@@ -5,11 +5,10 @@
         openMenuLabel: {{ json_encode(__("partials/header.open-bg-menu-label")) }},
     }"
     @resize.window="menuOpen = false"
-    x-trap="menuOpen"
     @keydown.window.escape="menuOpen = false"
     class="screen-width relative">
-    <div class="px-default pt-6 flex flex-row items-center justify-between">
-        <x-parts.skip-links/>
+    <x-parts.skip-links/>
+    <div x-trap="menuOpen" class="px-default pt-6 flex flex-row items-center justify-between">
         <a wire:navigate
            aria-label="{{ __('partials/header.back-to-home') }}"
            title="{{ __('partials/header.back-to-home') }}"
